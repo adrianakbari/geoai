@@ -1,8 +1,8 @@
-# GeoAI — Project Overview
+# GeoAI (Orion) — Project Overview
 
 ## What This Is
 
-GeoAI is an on-premise AI system that lets users query geospatial data using natural language. A user types "Show me all trees within 5m of roads" and the system figures out which PostGIS layers to use, plans and executes the GIS analysis, and returns the result as a map with a natural language summary.
+Orion GeoAI is an on-premise AI system that lets users query geospatial data using natural language. A user types "Show me all trees within 5m of roads" and the system figures out which PostGIS layers to use, plans and executes the GIS analysis, and returns the result as a map with a natural language summary.
 
 Everything runs on a single on-premise server. No data is sent to external services.
 

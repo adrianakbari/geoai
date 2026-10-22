@@ -22,6 +22,7 @@ Search the web using all of the following query terms. Use Dutch language and se
 - `"gemeente amstelveen" referentie`
 - `"gemeente amstelveen" aanbeveling`
 - `"gemeente amstelveen" project spatial`
+- `"gemeente amstelveen" blogs`
 - `inurl:gemeente-amstelveen`
 - `inurl:gemeente-amstelveen project OR referentie OR aanbeveling OR case`
 

@@ -1,4 +1,15 @@
-
+# Name 
+  ┌────────────────────────────────┬──────────────────────────────────┐
+  │            Purpose             │               Name               │
+  │ Trademark / legal registration │ OrionGeoAI (one word, no spaces) │
+  ├────────────────────────────────┼──────────────────────────────────┤
+  │ Brand / marketing / website    │ Orion GeoAI                      │
+  ├────────────────────────────────┼──────────────────────────────────┤
+  │ Domain                         │ orion.gisuniverse.com            │
+  ├────────────────────────────────┼──────────────────────────────────┤
+  │ Day-to-day shorthand           │ Orion                            │
+  └────────────────────────────────┴──────────────────────────────────┘
+  
 # Overview of steps
 1. Host LLM locally
 2. create data metadata generator scripts to index all data in the databse and keep the index up to date

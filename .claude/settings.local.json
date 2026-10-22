@@ -1,7 +1,31 @@
 {
   "permissions": {
     "allow": [
-      "WebSearch"
+      "WebSearch",
+      "WebFetch(domain:opensourcewerken.nl)",
+      "WebFetch(domain:www.digitaleoverheid.nl)",
+      "WebFetch(domain:tussenloketenserver.nl)",
+      "WebFetch(domain:interoperable-europe.ec.europa.eu)",
+      "WebFetch(domain:developer.overheid.nl)",
+      "WebFetch(domain:nlnet.nl)",
+      "WebFetch(domain:ibestuur.nl)",
+      "WebFetch(domain:www.open-overheid.nl)",
+      "WebFetch(domain:opengem.nl)",
+      "WebFetch(domain:social.overheid.nl)",
+      "WebFetch(domain:vng.nl)",
+      "WebFetch(domain:www.opennederland.nl)",
+      "WebFetch(domain:minvws.opensourcewerken.nl)",
+      "WebFetch(domain:www.logius.nl)",
+      "WebFetch(domain:community.developer.overheid.nl)",
+      "WebFetch(domain:geoinformatienederland.nl)",
+      "WebFetch(domain:www.nlgovmcp.nl)",
+      "WebFetch(domain:www.ictmagazine.nl)",
+      "WebFetch(domain:code.overheid.nl)",
+      "WebFetch(domain:www.sidnfonds.nl)",
+      "WebFetch(domain:www.dutchitchannel.nl)",
+      "WebFetch(domain:www.hetwaterschapshuis.nl)",
+      "WebFetch(domain:www.kennisvandeoverheid.nl)",
+      "WebFetch(domain:www.nldigitalgovernment.nl)"
     ]
   }
 }

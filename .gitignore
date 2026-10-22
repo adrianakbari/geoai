@@ -1,0 +1,9 @@
+*.pdf
+*.mp4
+*.zip
+*.cst
+*.dbf
+*.prj
+*.shp
+*.shx
+.claude/worktrees/

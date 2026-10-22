@@ -1,0 +1,970 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GeoAI — Seed Round Pitch Deck</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    background: #0a0f1e;
+    color: #e8eaf0;
+    overflow: hidden;
+    height: 100vh;
+  }
+
+  /* ── Navigation ── */
+  .nav {
+    position: fixed;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 0.5rem;
+    z-index: 100;
+    background: rgba(255,255,255,0.07);
+    padding: 0.6rem 1.2rem;
+    border-radius: 50px;
+    border: 1px solid rgba(255,255,255,0.12);
+    backdrop-filter: blur(12px);
+  }
+  .nav button {
+    background: none;
+    border: none;
+    color: rgba(255,255,255,0.5);
+    font-size: 1.4rem;
+    cursor: pointer;
+    padding: 0.2rem 0.8rem;
+    border-radius: 40px;
+    transition: all 0.2s;
+  }
+  .nav button:hover { color: #fff; background: rgba(255,255,255,0.1); }
+  .nav .slide-counter {
+    color: rgba(255,255,255,0.5);
+    font-size: 0.85rem;
+    display: flex;
+    align-items: center;
+    padding: 0 0.4rem;
+    min-width: 60px;
+    justify-content: center;
+  }
+
+  /* ── Slide Container ── */
+  .slides-wrapper {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+  }
+
+  .slide {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem 8%;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.45s ease;
+  }
+  .slide.active {
+    opacity: 1;
+    pointer-events: all;
+  }
+
+  /* ── Slide number badge ── */
+  .slide-num {
+    position: fixed;
+    top: 1.6rem;
+    right: 2rem;
+    font-size: 0.75rem;
+    color: rgba(255,255,255,0.3);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  /* ── Typography ── */
+  .slide-tag {
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: #4fc3f7;
+    margin-bottom: 1.1rem;
+  }
+  h1 { font-size: clamp(2.2rem, 5vw, 4rem); font-weight: 700; line-height: 1.1; }
+  h2 { font-size: clamp(1.6rem, 3.5vw, 2.6rem); font-weight: 700; line-height: 1.2; }
+  h3 { font-size: 1.15rem; font-weight: 600; }
+  p  { font-size: clamp(0.95rem, 1.8vw, 1.15rem); line-height: 1.7; color: #b0b8cc; }
+
+  .accent { color: #4fc3f7; }
+  .highlight { color: #fff; font-weight: 600; }
+
+  /* ── Slide-specific backgrounds ── */
+  .bg-cover  { background: radial-gradient(ellipse at 60% 40%, #0d2346 0%, #0a0f1e 70%); }
+  .bg-dark   { background: #0d1428; }
+  .bg-mid    { background: #0f1a30; }
+  .bg-accent { background: radial-gradient(ellipse at 30% 60%, #0a2a44 0%, #0a0f1e 70%); }
+
+  /* ── Grid layouts ── */
+  .two-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    width: 100%;
+    max-width: 1100px;
+  }
+  .three-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+    width: 100%;
+    max-width: 1100px;
+  }
+
+  /* ── Cards ── */
+  .card {
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 12px;
+    padding: 1.6rem 1.8rem;
+  }
+  .card h3 { margin-bottom: 0.6rem; }
+  .card p { font-size: 0.95rem; }
+
+  /* ── Cover Slide ── */
+  .cover-content { text-align: center; max-width: 820px; }
+  .logo {
+    font-size: 3rem;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    margin-bottom: 1.2rem;
+  }
+  .logo .geo { color: #4fc3f7; }
+  .logo .ai  { color: #fff; }
+  .tagline {
+    font-size: clamp(1.1rem, 2.5vw, 1.55rem);
+    color: #b0b8cc;
+    max-width: 680px;
+    margin: 0 auto 2.5rem;
+    line-height: 1.5;
+  }
+  .cover-meta {
+    font-size: 0.82rem;
+    color: rgba(255,255,255,0.3);
+    letter-spacing: 0.06em;
+  }
+
+  /* ── Grid dot background ── */
+  .grid-bg {
+    position: absolute;
+    inset: 0;
+    background-image:
+      linear-gradient(rgba(79,195,247,0.03) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(79,195,247,0.03) 1px, transparent 1px);
+    background-size: 48px 48px;
+    pointer-events: none;
+  }
+
+  /* ── Step list ── */
+  .step-list { list-style: none; width: 100%; max-width: 760px; }
+  .step-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.2rem;
+    margin-bottom: 1.1rem;
+  }
+  .step-num {
+    flex-shrink: 0;
+    width: 2rem; height: 2rem;
+    border-radius: 50%;
+    background: #4fc3f7;
+    color: #0a0f1e;
+    font-weight: 700;
+    font-size: 0.85rem;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .step-text { font-size: 1rem; color: #c8d0e0; line-height: 1.5; }
+  .step-text strong { color: #fff; }
+
+  /* ── Pipeline visual ── */
+  .pipeline {
+    display: flex;
+    align-items: center;
+    gap: 0;
+    width: 100%;
+    max-width: 1000px;
+    flex-wrap: nowrap;
+  }
+  .pipe-step {
+    flex: 1;
+    text-align: center;
+    padding: 1rem 0.8rem;
+    background: rgba(79,195,247,0.07);
+    border: 1px solid rgba(79,195,247,0.2);
+    border-radius: 8px;
+    font-size: 0.82rem;
+    line-height: 1.4;
+  }
+  .pipe-step .pipe-icon { font-size: 1.5rem; margin-bottom: 0.4rem; }
+  .pipe-step strong { display: block; color: #fff; font-size: 0.78rem; margin-bottom: 0.3rem; }
+  .pipe-step span { color: #7a90b0; font-size: 0.72rem; }
+  .pipe-arrow {
+    color: #4fc3f7;
+    font-size: 1.2rem;
+    padding: 0 0.3rem;
+    flex-shrink: 0;
+  }
+
+  /* ── Stat boxes ── */
+  .stat-row {
+    display: flex;
+    gap: 2rem;
+    width: 100%;
+    max-width: 1000px;
+    flex-wrap: wrap;
+  }
+  .stat-box {
+    flex: 1;
+    min-width: 180px;
+    text-align: center;
+    padding: 1.8rem 1.2rem;
+    background: rgba(79,195,247,0.06);
+    border: 1px solid rgba(79,195,247,0.18);
+    border-radius: 12px;
+  }
+  .stat-box .big-num {
+    font-size: clamp(1.8rem, 4vw, 2.8rem);
+    font-weight: 800;
+    color: #4fc3f7;
+    line-height: 1;
+    margin-bottom: 0.4rem;
+  }
+  .stat-box .label {
+    font-size: 0.82rem;
+    color: #7a90b0;
+    line-height: 1.4;
+  }
+
+  /* ── Traction items ── */
+  .traction-list { list-style: none; max-width: 800px; width: 100%; }
+  .traction-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 0.9rem 0;
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+    font-size: 1rem;
+    color: #c8d0e0;
+  }
+  .traction-list li:last-child { border-bottom: none; }
+  .check { color: #4caf50; font-size: 1.1rem; flex-shrink: 0; margin-top: 0.1rem; }
+  .traction-list strong { color: #fff; }
+
+  /* ── Business model table ── */
+  .biz-table {
+    width: 100%;
+    max-width: 1000px;
+    border-collapse: collapse;
+    font-size: 0.9rem;
+  }
+  .biz-table th {
+    background: rgba(79,195,247,0.12);
+    color: #4fc3f7;
+    padding: 0.8rem 1rem;
+    text-align: left;
+    font-weight: 600;
+    font-size: 0.78rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+  .biz-table td {
+    padding: 0.85rem 1rem;
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+    color: #c8d0e0;
+  }
+  .biz-table tr:last-child td { border-bottom: none; }
+  .biz-table td:first-child { color: #fff; font-weight: 500; }
+  .biz-table td .price { color: #4fc3f7; font-weight: 700; }
+
+  /* ── Competition table ── */
+  .comp-row {
+    display: grid;
+    grid-template-columns: 1.5fr repeat(4, 1fr);
+    gap: 0;
+    width: 100%;
+    max-width: 1000px;
+  }
+  .comp-cell {
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid rgba(255,255,255,0.07);
+    font-size: 0.88rem;
+    color: #c8d0e0;
+    display: flex;
+    align-items: center;
+  }
+  .comp-header {
+    background: rgba(79,195,247,0.1);
+    color: #4fc3f7;
+    font-weight: 600;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    border-bottom: 1px solid rgba(79,195,247,0.2);
+  }
+  .comp-cell.us { color: #4fc3f7; font-weight: 700; }
+  .tick { color: #4caf50; }
+  .cross { color: #ef5350; }
+
+  /* ── Team cards ── */
+  .team-card {
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 12px;
+    padding: 1.6rem;
+    text-align: center;
+  }
+  .team-avatar {
+    width: 64px; height: 64px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #0d3b6e, #4fc3f7);
+    margin: 0 auto 1rem;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 1.6rem; font-weight: 700; color: #fff;
+  }
+  .team-card h3 { margin-bottom: 0.3rem; }
+  .team-card .role { color: #4fc3f7; font-size: 0.82rem; margin-bottom: 0.6rem; font-weight: 600; letter-spacing: 0.04em; }
+  .team-card p { font-size: 0.85rem; }
+
+  /* ── Ask slide ── */
+  .ask-grid {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 3rem;
+    width: 100%;
+    max-width: 1100px;
+  }
+  .use-of-funds { list-style: none; margin-top: 1rem; }
+  .use-of-funds li {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.7rem 0;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+    font-size: 0.95rem;
+  }
+  .use-of-funds li:last-child { border-bottom: none; }
+  .use-of-funds .item { color: #c8d0e0; }
+  .use-of-funds .pct { color: #4fc3f7; font-weight: 600; }
+
+  .milestones { list-style: none; margin-top: 1rem; }
+  .milestones li {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+    color: #c8d0e0;
+  }
+  .milestones .mo {
+    flex-shrink: 0;
+    width: 52px;
+    font-weight: 700;
+    color: #4fc3f7;
+    font-size: 0.82rem;
+  }
+
+  /* ── Closing slide ── */
+  .closing { text-align: center; max-width: 700px; }
+  .closing h1 { margin-bottom: 1.2rem; }
+  .closing p { font-size: 1.15rem; margin-bottom: 2.5rem; }
+  .contact-box {
+    background: rgba(79,195,247,0.08);
+    border: 1px solid rgba(79,195,247,0.25);
+    border-radius: 12px;
+    padding: 1.5rem 2.5rem;
+    font-size: 1rem;
+    color: #b0b8cc;
+    line-height: 1.9;
+  }
+  .contact-box a { color: #4fc3f7; text-decoration: none; }
+
+  /* ── Wide slide header ── */
+  .slide-header {
+    width: 100%;
+    max-width: 1100px;
+    margin-bottom: 2.5rem;
+  }
+  .slide-header h2 { margin-bottom: 0.4rem; }
+  .slide-header p { font-size: 1rem; }
+
+  /* ── Problem pain points ── */
+  .pain-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.4rem;
+    width: 100%;
+    max-width: 1000px;
+  }
+  .pain-card {
+    background: rgba(239,83,80,0.06);
+    border: 1px solid rgba(239,83,80,0.2);
+    border-radius: 10px;
+    padding: 1.4rem 1.6rem;
+  }
+  .pain-card .pain-icon { font-size: 1.6rem; margin-bottom: 0.6rem; }
+  .pain-card h3 { color: #ef9a9a; margin-bottom: 0.4rem; }
+  .pain-card p { font-size: 0.88rem; color: #9aaecc; }
+
+  /* keyboard hint */
+  .key-hint {
+    position: fixed;
+    top: 1.6rem;
+    left: 2rem;
+    font-size: 0.72rem;
+    color: rgba(255,255,255,0.2);
+    letter-spacing: 0.06em;
+  }
+</style>
+</head>
+<body>
+
+<div class="key-hint">← → ARROW KEYS or BUTTONS</div>
+
+<!-- ═══════════════════════════════════════
+     SLIDES
+════════════════════════════════════════ -->
+<div class="slides-wrapper">
+
+  <!-- ── 1. COVER ── -->
+  <div class="slide bg-cover active" id="slide-1">
+    <div class="grid-bg"></div>
+    <div class="cover-content">
+      <div class="logo"><span class="geo">Geo</span><span class="ai">AI</span></div>
+      <div class="tagline">
+        Ask questions about your Geospatial Data. Get the answer like a specialist.
+        <br><strong style="color:#fff;">On-premise AI for geospatial data and automations — no SQL, no cloud.</strong>
+      </div>
+      <div class="cover-meta"> SEPTEMBER 2026 &nbsp;·&nbsp; GIS Universe B.V.</div>
+    </div>
+  </div>
+
+  <!-- ── 2. PROBLEM ── -->
+  <div class="slide bg-dark" id="slide-2">
+    <div class="slide-header">
+      <div class="slide-tag">The Problem</div>
+      <h2>GIS data is everywhere. <span class="accent">Insights are not.</span></h2>
+      <p>Every municipality, water board, and utility sits on hundreds of spatial datasets — but answering even simple questions takes hours.</p>
+    </div>
+    <div class="pain-grid">
+      <div class="pain-card">
+        <div class="pain-icon">⏳</div>
+        <h3>Hours lost to SQL</h3>
+        <p>A GIS analyst needs to write complex PostGIS queries for every ad-hoc spatial question. A single analysis takes 2–4 hours instead of 2 minutes.</p>
+      </div>
+      <div class="pain-card">
+        <div class="pain-icon">🔒</div>
+        <h3>Data locked from decision-makers</h3>
+        <p>Policy officers and managers need geo insights daily but cannot access them without a GIS specialist. GIS teams are the bottleneck.</p>
+      </div>
+      <div class="pain-card">
+        <div class="pain-icon">☁️</div>
+        <h3>Cloud AI is not an option</h3>
+        <p>Dutch government data (BGT, BAG, underground infrastructure) cannot leave the premises. ChatGPT-based tools are legally blocked for this sector.</p>
+      </div>
+      <div class="pain-card">
+        <div class="pain-icon">💸</div>
+        <h3>Esri owns the market</h3>
+        <p>ArcGIS costs €30K–150K/year per organization. Its AI features require cloud. Dutch municipalities are actively looking for a sovereign alternative.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── 3. SOLUTION ── -->
+  <div class="slide bg-mid" id="slide-3">
+    <div class="grid-bg"></div>
+    <div class="slide-header">
+      <div class="slide-tag">The Solution</div>
+      <h2>Natural language → GIS analysis → <span class="accent">map</span></h2>
+      <p style="max-width:700px;">GeoAI is an on-premise AI system that understands geospatial questions in plain Dutch or English, runs the analysis against PostGIS, and returns the result as an interactive map — no SQL, no code, no cloud.</p>
+    </div>
+    <div style="margin-bottom:2rem;max-width:820px;width:100%;">
+      <div class="card" style="background:rgba(79,195,247,0.06);border-color:rgba(79,195,247,0.25);">
+        <p style="font-size:1rem;color:#e0e8f4;font-style:italic;line-height:1.8;">
+          "Show me all buildings that lose the most heat, within 200m of a gas pipeline, in the Stadshart neighbourhood."
+          <br><span style="color:#4fc3f7;font-size:0.9rem;font-style:normal;">→ GeoAI finds the right layers, runs buffer + spatial join + attribute filter, renders the result on a map, and explains: <strong style="color:#fff;">"47 buildings found. Average heat loss index 8.2. Top priority: Rembrandtweg 12–34."</strong></span>
+        </p>
+      </div>
+    </div>
+    <ul class="step-list">
+      <li><div class="step-num">✓</div><div class="step-text"><strong>Zero learning curve</strong> — any staff member can use it in plain language</div></li>
+      <li><div class="step-num">✓</div><div class="step-text"><strong>100% on-premise</strong> — data never leaves the server</div></li>
+      <li><div class="step-num">✓</div><div class="step-text"><strong>Works with existing PostGIS databases</strong> — no migration, no vendor lock-in</div></li>
+    </ul>
+  </div>
+
+  <!-- ── 4. PRODUCT / HOW IT WORKS ── -->
+  <div class="slide bg-dark" id="slide-4">
+    <div class="slide-header">
+      <div class="slide-tag">Product</div>
+      <h2>Five-step AI pipeline — <span class="accent">fully on-premise</span></h2>
+    </div>
+    <div class="pipeline">
+      <div class="pipe-step">
+        <div class="pipe-icon">💬</div>
+        <strong>NL Query</strong>
+        <span>User types a question in Dutch or English</span>
+      </div>
+      <div class="pipe-arrow">→</div>
+      <div class="pipe-step">
+        <div class="pipe-icon">🗂️</div>
+        <strong>Data Catalog</strong>
+        <span>pgvector semantic search over 287+ layers</span>
+      </div>
+      <div class="pipe-arrow">→</div>
+      <div class="pipe-step">
+        <div class="pipe-icon">🧠</div>
+        <strong>AI Planner</strong>
+        <span>Qwen3 14B generates JSON execution plan</span>
+      </div>
+      <div class="pipe-arrow">→</div>
+      <div class="pipe-step">
+        <div class="pipe-icon">⚙️</div>
+        <strong>Execution</strong>
+        <span>PostGIS SQL &amp; GeoPandas run the analysis</span>
+      </div>
+      <div class="pipe-arrow">→</div>
+      <div class="pipe-step">
+        <div class="pipe-icon">🗺️</div>
+        <strong>Output</strong>
+        <span>MapLibre map + NL summary + export</span>
+      </div>
+    </div>
+    <div class="three-col" style="margin-top:2.5rem;max-width:1000px;">
+      <div class="card">
+        <h3>Supported Operations</h3>
+        <p style="font-size:0.85rem;margin-top:0.5rem;">Buffer · Spatial Join · Intersect · Clip · Nearest Neighbor · Aggregate · Heatmap · Routing · Attribute Filter · Dissolve</p>
+      </div>
+      <div class="card">
+        <h3>Tech Stack</h3>
+        <p style="font-size:0.85rem;margin-top:0.5rem;">Spring Boot 4 · PostgreSQL 17 + PostGIS · pgvector · Ollama · Qwen3 14B · FastAPI · MapLibre · Redis</p>
+      </div>
+      <div class="card">
+        <h3>Hardware</h3>
+        <p style="font-size:0.85rem;margin-top:0.5rem;">Runs on a single mini-server: AMD Ryzen AI Max+ 395 · 128GB RAM · 50 TOPS NPU · ~€3K hardware cost</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── 5. WHY NOW ── -->
+  <div class="slide bg-accent" id="slide-5">
+    <div class="slide-header">
+      <div class="slide-tag">Why Now</div>
+      <h2>Three tailwinds are <span class="accent">converging</span></h2>
+    </div>
+    <div class="three-col" style="max-width:1000px;">
+      <div class="card">
+        <div style="font-size:2rem;margin-bottom:0.8rem;">🤖</div>
+        <h3>LLMs finally work on-premise</h3>
+        <p style="margin-top:0.5rem;font-size:0.9rem;">Models like Qwen3 14B run on consumer hardware with response times under 3 seconds. Two years ago this was impossible at this price point.</p>
+      </div>
+      <div class="card">
+        <div style="font-size:2rem;margin-bottom:0.8rem;">🇪🇺</div>
+        <h3>EU AI Act + data sovereignty</h3>
+        <p style="margin-top:0.5rem;font-size:0.9rem;">The EU AI Act and Dutch government policy mandate that sensitive public data must stay on-premise. Cloud AI vendors are being blocked from government contracts.</p>
+      </div>
+      <div class="card">
+        <div style="font-size:2rem;margin-bottom:0.8rem;">🏛️</div>
+        <h3>Municipalities are ready</h3>
+        <p style="margin-top:0.5rem;font-size:0.9rem;">Dutch gemeenten are actively replacing Esri. Geosquare alone serves 100 municipalities in this migration. GIS AI is their #1 requested feature for 2026.</p>
+      </div>
+    </div>
+    <div class="card" style="margin-top:2rem;max-width:1000px;background:rgba(79,195,247,0.05);">
+      <p style="font-size:0.95rem;">
+        <span class="highlight">First-mover window:</span> Camp to Camp (the closest comparable product) was acquired by Swiss Telecom and is losing momentum.
+        There is no on-premise NL→GIS product serving the Dutch/EU government market today.
+      </p>
+    </div>
+  </div>
+
+  <!-- ── 6. MARKET ── -->
+  <div class="slide bg-dark" id="slide-6">
+    <div class="slide-header">
+      <div class="slide-tag">Market Size</div>
+      <h2>Large, defensible, and <span class="accent">underserved</span></h2>
+    </div>
+    <div class="stat-row" style="margin-bottom:2.5rem;">
+      <div class="stat-box">
+        <div class="big-num">€2.4B</div>
+        <div class="label">TAM — EU government<br>GIS software market</div>
+      </div>
+      <div class="stat-box">
+        <div class="big-num">€180M</div>
+        <div class="label">SAM — Netherlands<br>(gemeenten + waterschappen + utilities)</div>
+      </div>
+      <div class="stat-box">
+        <div class="big-num">€9M</div>
+        <div class="label">SOM Year 3<br>(30 organizations via partners)</div>
+      </div>
+    </div>
+    <div class="two-col" style="max-width:1000px;">
+      <div>
+        <h3 style="margin-bottom:0.8rem;">Netherlands (beachhead)</h3>
+        <ul style="list-style:none;font-size:0.9rem;color:#b0b8cc;line-height:2;">
+          <li>🏛️ <strong style="color:#fff;">342</strong> Gemeenten (municipalities)</li>
+          <li>💧 <strong style="color:#fff;">21</strong> Waterschappen (water boards)</li>
+          <li>🛣️ <strong style="color:#fff;">1</strong> Rijkswaterstaat (national roads &amp; water)</li>
+          <li>⚡ <strong style="color:#fff;">50+</strong> Utility companies (Stedin, Alliander…)</li>
+          <li style="margin-top:0.5rem;color:#4fc3f7;">Average license: <strong>€20K–30K/year</strong></li>
+        </ul>
+      </div>
+      <div>
+        <h3 style="margin-bottom:0.8rem;">EU Expansion (Year 2–3)</h3>
+        <ul style="list-style:none;font-size:0.9rem;color:#b0b8cc;line-height:2;">
+          <li>🇩🇪 Germany — 11,000+ municipalities</li>
+          <li>🇧🇪 Belgium — strong FOSS4G community</li>
+          <li>🇫🇷 France — IGN partnership opportunities</li>
+          <li>🌍 FOSS4G global network (built-in distribution)</li>
+          <li style="margin-top:0.5rem;color:#4fc3f7;">GeoCommons EU grant: <strong>€6M call open</strong></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── 7. BUSINESS MODEL ── -->
+  <div class="slide bg-mid" id="slide-7">
+    <div class="slide-header">
+      <div class="slide-tag">Business Model</div>
+      <h2>License through GIS contractors — <span class="accent">OEM distribution</span></h2>
+      <p>We cannot sell directly to Dutch government. We sell to the GIS contractors who build apps for municipalities. They embed GeoAI and pay us per deployment.</p>
+    </div>
+    <table class="biz-table">
+      <thead>
+        <tr>
+          <th>Tier</th>
+          <th>Buyer</th>
+          <th>What they get</th>
+          <th>Our Revenue</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Pilot</td>
+          <td>First contractor (e.g. Geosquare)</td>
+          <td>3-month trial, 1 municipality, limited layers</td>
+          <td><span class="price">€5K</span> (cost recovery)</td>
+        </tr>
+        <tr>
+          <td>OEM Starter</td>
+          <td>GIS software vendor</td>
+          <td>API license, up to 10 deployments</td>
+          <td><span class="price">€2,500/mo</span></td>
+        </tr>
+        <tr>
+          <td>OEM Growth</td>
+          <td>GIS software vendor</td>
+          <td>API license, up to 50 deployments</td>
+          <td><span class="price">€8,000/mo</span></td>
+        </tr>
+        <tr>
+          <td>OEM Enterprise</td>
+          <td>Large vendor (Geosquare, Sweco)</td>
+          <td>Unlimited deployments + custom fine-tuning</td>
+          <td><span class="price">€15K–25K/mo</span></td>
+        </tr>
+        <tr>
+          <td>Direct Project</td>
+          <td>Contractor per project</td>
+          <td>On-premise deployment + 1-year support</td>
+          <td><span class="price">€30K + €20K/yr</span></td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="card" style="margin-top:1.5rem;max-width:1000px;background:rgba(79,195,247,0.05);">
+      <p style="font-size:0.92rem;"><span class="highlight">Path to €1M ARR:</span> 1 OEM Enterprise contract (Geosquare, 100 municipalities) = <span class="accent">€180K–300K ARR</span>.
+      3 OEM Growth contracts = <span class="accent">€288K ARR</span>. 10 direct projects = <span class="accent">€500K ARR</span>. Realistic within 18 months.</p>
+    </div>
+  </div>
+
+  <!-- ── 8. TRACTION ── -->
+  <div class="slide bg-dark" id="slide-8">
+    <div class="slide-header">
+      <div class="slide-tag">Traction</div>
+      <h2>Early validation from the <span class="accent">right players</span></h2>
+    </div>
+    <ul class="traction-list">
+      <li>
+        <span class="check">✅</span>
+        <span><strong>Gemeente Amstelveen pilot</strong> — active pilot client with 287 PostGIS layers indexed. Live demo of energy label analysis, tree felling analysis, and drainage routing delivered.</span>
+      </li>
+      <li>
+        <span class="check">✅</span>
+        <span><strong>Geosquare (100 municipalities)</strong> — CTO Peter Paul Koonings confirmed intent to integrate GeoAI into their platform by January 2027. Demo at their October conference planned.</span>
+      </li>
+      <li>
+        <span class="check">✅</span>
+        <span><strong>FOSS4G 2026 network</strong> — active in the global open-source GIS community. Camp to Camp, IGN, and Provincie Zuid-Holland all engaged at the conference.</span>
+      </li>
+      <li>
+        <span class="check">✅</span>
+        <span><strong>Provincie Zuid-Holland</strong> — presented at KennisKring GeoAI. AI Architect (Thijs Oosterhuis) exploring GeoAI for their data team.</span>
+      </li>
+      <li>
+        <span class="check">✅</span>
+        <span><strong>Working prototype</strong> — 5-step pipeline operational. Live demo videos available. NL queries answered end-to-end on Amstelveen data.</span>
+      </li>
+      <li>
+        <span class="check">✅</span>
+        <span><strong>Advisor pipeline</strong> — Vital Schreurs (serial GIS founder, built &amp; sold GIM), Octavian Borca (BD, success-fee model), Interim Innovators network (RWS, PWN, ATOS).</span>
+      </li>
+    </ul>
+  </div>
+
+  <!-- ── 9. GO TO MARKET ── -->
+  <div class="slide bg-mid" id="slide-9">
+    <div class="slide-header">
+      <div class="slide-tag">Go-to-Market</div>
+      <h2>Distribution through <span class="accent">GIS contractors</span> we already know</h2>
+    </div>
+    <div class="two-col" style="max-width:1100px;">
+      <div>
+        <h3 style="color:#4fc3f7;margin-bottom:1rem;">Phase 1 — Beachhead (Now → Mo. 6)</h3>
+        <ul class="step-list">
+          <li><div class="step-num">1</div><div class="step-text">Close Geosquare OEM deal — embed GeoAI in their suite for 100 municipalities by Jan 2027</div></li>
+          <li><div class="step-num">2</div><div class="step-text">Expand Amstelveen pilot to a paid annual license via their contractor</div></li>
+          <li><div class="step-num">3</div><div class="step-text">Engage Net4s, D2Win, Tensing — target 2 more contractor partnerships</div></li>
+        </ul>
+        <h3 style="color:#4fc3f7;margin-top:1.5rem;margin-bottom:1rem;">Phase 2 — Scale (Mo. 7–18)</h3>
+        <ul class="step-list">
+          <li><div class="step-num">4</div><div class="step-text">Open-source the core (marketing + credibility) — drive inbound from FOSS4G community</div></li>
+          <li><div class="step-num">5</div><div class="step-text">Apply for GeoCommons EU grant (€6M call) — fund EU expansion with non-dilutive capital</div></li>
+          <li><div class="step-num">6</div><div class="step-text">Enter Belgium and Germany via FOSS4G Europe network (IGN, OSGeo partners)</div></li>
+        </ul>
+      </div>
+      <div>
+        <h3 style="margin-bottom:1rem;">Target Contractors (warm leads)</h3>
+        <div style="display:flex;flex-wrap:wrap;gap:0.6rem;margin-bottom:1.5rem;">
+          <span style="background:rgba(79,195,247,0.1);border:1px solid rgba(79,195,247,0.2);border-radius:20px;padding:0.3rem 0.9rem;font-size:0.82rem;color:#4fc3f7;">Geosquare</span>
+          <span style="background:rgba(79,195,247,0.1);border:1px solid rgba(79,195,247,0.2);border-radius:20px;padding:0.3rem 0.9rem;font-size:0.82rem;color:#4fc3f7;">Net4s</span>
+          <span style="background:rgba(79,195,247,0.1);border:1px solid rgba(79,195,247,0.2);border-radius:20px;padding:0.3rem 0.9rem;font-size:0.82rem;color:#4fc3f7;">D2Win</span>
+          <span style="background:rgba(79,195,247,0.1);border:1px solid rgba(79,195,247,0.2);border-radius:20px;padding:0.3rem 0.9rem;font-size:0.82rem;color:#4fc3f7;">Sweco</span>
+          <span style="background:rgba(79,195,247,0.1);border:1px solid rgba(79,195,247,0.2);border-radius:20px;padding:0.3rem 0.9rem;font-size:0.82rem;color:#4fc3f7;">CGI</span>
+          <span style="background:rgba(79,195,247,0.1);border:1px solid rgba(79,195,247,0.2);border-radius:20px;padding:0.3rem 0.9rem;font-size:0.82rem;color:#4fc3f7;">Tensing</span>
+          <span style="background:rgba(79,195,247,0.1);border:1px solid rgba(79,195,247,0.2);border-radius:20px;padding:0.3rem 0.9rem;font-size:0.82rem;color:#4fc3f7;">NieuwlandGeo</span>
+          <span style="background:rgba(79,195,247,0.1);border:1px solid rgba(79,195,247,0.2);border-radius:20px;padding:0.3rem 0.9rem;font-size:0.82rem;color:#4fc3f7;">Allinq</span>
+        </div>
+        <h3 style="margin-bottom:1rem;">Why contractors buy</h3>
+        <p style="font-size:0.9rem;color:#b0b8cc;line-height:1.8;">
+          Their clients (municipalities) are asking for AI. Building it themselves costs €200K+.
+          Buying GeoAI as an OEM API gives them the feature in weeks, not years.
+          <strong style="color:#fff;">We are their R&amp;D department for AI.</strong>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── 10. COMPETITION ── -->
+  <div class="slide bg-dark" id="slide-10">
+    <div class="slide-header">
+      <div class="slide-tag">Competition</div>
+      <h2>No direct on-premise NL→GIS competitor <span class="accent">exists today</span></h2>
+    </div>
+    <div class="comp-row">
+      <div class="comp-cell comp-header">Solution</div>
+      <div class="comp-cell comp-header">On-Premise</div>
+      <div class="comp-cell comp-header">NL→GIS (no SQL)</div>
+      <div class="comp-cell comp-header">PostGIS Native</div>
+      <div class="comp-cell comp-header">EU Gov Ready</div>
+    </div>
+    <div class="comp-row">
+      <div class="comp-cell us" style="font-weight:800;">GeoAI ← Us</div>
+      <div class="comp-cell"><span class="tick">✅</span></div>
+      <div class="comp-cell"><span class="tick">✅</span></div>
+      <div class="comp-cell"><span class="tick">✅</span></div>
+      <div class="comp-cell"><span class="tick">✅</span></div>
+    </div>
+    <div class="comp-row">
+      <div class="comp-cell">Esri ArcGIS AI</div>
+      <div class="comp-cell"><span class="cross">❌</span> Cloud only</div>
+      <div class="comp-cell"><span class="tick">✅</span></div>
+      <div class="comp-cell"><span class="cross">❌</span></div>
+      <div class="comp-cell"><span class="cross">❌</span> Data leaves EU</div>
+    </div>
+    <div class="comp-row">
+      <div class="comp-cell">Camp to Camp / GeoLLM</div>
+      <div class="comp-cell"><span class="tick">✅</span></div>
+      <div class="comp-cell"><span class="tick">~</span> Limited</div>
+      <div class="comp-cell"><span class="tick">~</span> Partial</div>
+      <div class="comp-cell"><span class="tick">~</span> Swiss focus; acquired by Swisscom</div>
+    </div>
+    <div class="comp-row">
+      <div class="comp-cell">Carto / MapChat</div>
+      <div class="comp-cell"><span class="cross">❌</span> SaaS only</div>
+      <div class="comp-cell"><span class="tick">✅</span></div>
+      <div class="comp-cell"><span class="cross">❌</span></div>
+      <div class="comp-cell"><span class="cross">❌</span></div>
+    </div>
+    <div class="comp-row">
+      <div class="comp-cell">GeoAgent (opengeos)</div>
+      <div class="comp-cell"><span class="tick">✅</span></div>
+      <div class="comp-cell"><span class="tick">~</span> Research only</div>
+      <div class="comp-cell"><span class="cross">❌</span></div>
+      <div class="comp-cell"><span class="cross">❌</span> Not productized</div>
+    </div>
+    <div class="card" style="margin-top:1.5rem;max-width:1000px;background:rgba(79,195,247,0.05);">
+      <p style="font-size:0.9rem;"><span class="highlight">Our moat:</span> On-premise deployment + PostGIS-native execution + Dutch gov compliance + FOSS4G community distribution.
+      These four together cannot be replicated by US cloud vendors or research projects.</p>
+    </div>
+  </div>
+
+  <!-- ── 11. TEAM ── -->
+  <div class="slide bg-mid" id="slide-11">
+    <div class="slide-header">
+      <div class="slide-tag">Team</div>
+      <h2>Domain-first team — <span class="accent">GIS × AI × BD</span></h2>
+    </div>
+    <div class="three-col" style="max-width:1000px;margin-bottom:2rem;">
+      <div class="team-card">
+        <div class="team-avatar">A</div>
+        <h3>Adrian Akbari</h3>
+        <div class="role">Founder &amp; CEO</div>
+        <p>GIS architect with deep PostGIS &amp; AI integration expertise. Designed enterprise geo-systems for Stedin (utility), RWS, and municipalities. Full-stack: architecture to BD.</p>
+      </div>
+      <div class="team-card">
+        <div class="team-avatar">+</div>
+        <h3>AI/GIS Engineer</h3>
+        <div class="role">Hiring — Python · PostGIS · LLM</div>
+        <p>Mid-level Python developer with GIS background. Will own the execution engine, prompt engineering pipeline, and data catalog automation.</p>
+      </div>
+      <div class="team-card">
+        <div class="team-avatar">+</div>
+        <h3>GIS Frontend Dev</h3>
+        <div class="role">Hiring — MapLibre · FastAPI</div>
+        <p>Frontend developer with MapLibre/Leaflet experience. Owns the map output layer, UI, and vector tile integration.</p>
+      </div>
+    </div>
+    <div class="two-col" style="max-width:1000px;">
+      <div class="card">
+        <h3>Advisors &amp; Network</h3>
+        <p style="font-size:0.88rem;margin-top:0.5rem;line-height:1.8;">
+          <strong>Vital Schreurs</strong> — Built &amp; sold GIM; 30 yrs gov/utilities BD<br>
+          <strong>Octavian Borca</strong> — BD (Swiss Post, EU clients)<br>
+          <strong>Interim Innovators</strong> — RWS, PWN, ATOS geo network<br>
+          <strong>Peter Paul Koonings</strong> — Geosquare CTO (100 municipalities)
+        </p>
+      </div>
+      <div class="card">
+        <h3>Why we will win</h3>
+        <p style="font-size:0.88rem;margin-top:0.5rem;line-height:1.8;">
+          We are not engineers who discovered GIS — we are GIS experts who built the AI.
+          We know exactly what questions municipalities ask, what data they have, and which contractors
+          hold the relationships. That domain knowledge is not transferable.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── 12. THE ASK ── -->
+  <div class="slide bg-accent" id="slide-12">
+    <div class="grid-bg"></div>
+    <div class="slide-header">
+      <div class="slide-tag">The Ask</div>
+      <h2>Raising <span class="accent">€350,000</span> seed — 18 months to first revenue</h2>
+    </div>
+    <div class="ask-grid">
+      <div>
+        <div class="card">
+          <h3 style="margin-bottom:0.5rem;">Use of Funds</h3>
+          <ul class="use-of-funds">
+            <li><span class="item">AI/GIS Engineer (18 mo.)</span><span class="pct">35% · €122K</span></li>
+            <li><span class="item">Frontend Developer (12 mo.)</span><span class="pct">25% · €88K</span></li>
+            <li><span class="item">Hardware + infrastructure</span><span class="pct">10% · €35K</span></li>
+            <li><span class="item">Legal, IP, GDPR compliance</span><span class="pct">8% · €28K</span></li>
+            <li><span class="item">BD + sales (travel, events)</span><span class="pct">12% · €42K</span></li>
+            <li><span class="item">Buffer / ops</span><span class="pct">10% · €35K</span></li>
+          </ul>
+        </div>
+      </div>
+      <div>
+        <div class="card">
+          <h3 style="margin-bottom:0.5rem;">18-Month Milestones</h3>
+          <ul class="milestones">
+            <li><span class="mo">Mo. 1–3</span>Production prototype; Geosquare integration live</li>
+            <li><span class="mo">Mo. 4–6</span>First paid license signed; 3 contractor pilots active</li>
+            <li><span class="mo">Mo. 7–12</span>€150K ARR; open-source release; EU grant application</li>
+            <li><span class="mo">Mo. 13–18</span>€500K ARR; 2nd market entry (Belgium/Germany)</li>
+          </ul>
+        </div>
+        <div class="card" style="margin-top:1rem;background:rgba(79,195,247,0.08);border-color:rgba(79,195,247,0.3);">
+          <p style="font-size:0.88rem;">
+            <span class="highlight">What we need from investors beyond capital:</span><br>
+            EU government / GIS market introductions · Go-to-market experience in B2G SaaS · Network in Dutch &amp; European infrastructure sector
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── 13. CLOSING ── -->
+  <div class="slide bg-cover" id="slide-13">
+    <div class="grid-bg"></div>
+    <div class="closing">
+      <div class="slide-tag" style="margin-bottom:1.5rem;">GeoAI — Seed Round 2026</div>
+      <h1>Every map has a question.<br><span class="accent">We built the system<br>that answers it.</span></h1>
+      <p style="margin:1.5rem auto;max-width:580px;">
+        On-premise AI for geospatial data. Natural language in, map out.
+        Zero SQL. Zero cloud. Built for Dutch and EU government data sovereignty.
+      </p>
+      <div class="contact-box">
+        <strong style="color:#fff;">Adrian Akbari</strong> · Founder, GeoAI<br>
+        <a href="mailto:adrian@gisuniverse.com">adrian@gisuniverse.com</a><br>
+        <span style="color:rgba(255,255,255,0.4);font-size:0.85rem;">Raising €350,000 seed &nbsp;·&nbsp; First close target: Q4 2026</span>
+      </div>
+    </div>
+  </div>
+
+</div><!-- /slides-wrapper -->
+
+<!-- ── Slide number ── -->
+<div class="slide-num" id="slide-num">1 / 13</div>
+
+<!-- ── Navigation ── -->
+<div class="nav">
+  <button onclick="prevSlide()" title="Previous">‹</button>
+  <div class="slide-counter" id="counter">1 / 13</div>
+  <button onclick="nextSlide()" title="Next">›</button>
+</div>
+
+<script>
+  const totalSlides = 13;
+  let current = 1;
+
+  function showSlide(n) {
+    document.querySelector('.slide.active')?.classList.remove('active');
+    document.getElementById('slide-' + n)?.classList.add('active');
+    document.getElementById('counter').textContent = n + ' / ' + totalSlides;
+    document.getElementById('slide-num').textContent = n + ' / ' + totalSlides;
+    current = n;
+  }
+
+  function nextSlide() { if (current < totalSlides) showSlide(current + 1); }
+  function prevSlide() { if (current > 1) showSlide(current - 1); }
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'ArrowRight' || e.key === 'ArrowDown' || e.key === ' ') { e.preventDefault(); nextSlide(); }
+    if (e.key === 'ArrowLeft'  || e.key === 'ArrowUp') { e.preventDefault(); prevSlide(); }
+  });
+
+  // Touch swipe support
+  let touchStartX = 0;
+  document.addEventListener('touchstart', e => { touchStartX = e.changedTouches[0].screenX; });
+  document.addEventListener('touchend', e => {
+    const dx = e.changedTouches[0].screenX - touchStartX;
+    if (Math.abs(dx) > 50) { dx < 0 ? nextSlide() : prevSlide(); }
+  });
+</script>
+</body>
+</html>

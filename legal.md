@@ -1,3 +1,14 @@
+# Name 
+  ┌────────────────────────────────┬──────────────────────────────────┐
+  │            Purpose             │               Name               │
+  │ Trademark / legal registration │ OrionGeoAI (one word, no spaces) │
+  ├────────────────────────────────┼──────────────────────────────────┤
+  │ Brand / marketing / website    │ Orion GeoAI                      │
+  ├────────────────────────────────┼──────────────────────────────────┤
+  │ Domain                         │ orion.gisuniverse.com            │
+  ├────────────────────────────────┼──────────────────────────────────┤
+  │ Day-to-day shorthand           │ Orion                            │
+  └────────────────────────────────┴──────────────────────────────────┘
 # How to avoid "work for hire" trap
 one of my concerns is that because they are paying me to implement the prototype for them, they come up and say "We pay you for the development of the software so its ours". in other words i dont want them to    limit my growth and market only to themselves by any means. in an imaginary scenario that this happens, what is an smart way to get out of it and keep my options open to sell the products to other businesses as well?
 

@@ -105,3 +105,28 @@ This framework fits in nicely with CRM, Sales Intel, OSINT.
 ## Flowchart
 
 Find organization --> research whats this organization is responsible for? i.e. management of utility assets -> whats their vision? i.e Green Vision 2028 or Energie Transitie --> What regulations, rules and policies affect them? i.e. zero emission until 2026, EUDR --> check their (previous) tenders: if found, what is it for? --> check their competitors or similar companies: what projects, visions, regulations, etc do they have? what about their tenders? --> find their pain points (money, time, hr, technology, etc...) --> research how they are solving their issues now --> find their contractors (blogs, tender portals, etc) --> Make a cost estimation (time, money, hr, technology and licensing of their current solution) --> find a better solution --> find key decission makers in their org . --> create a personalized message.--> approach them  
+
+# Go to Market 
+## Conferences
+- Swiss IT Forum 
+    - 29 , 30 Sept 
+    - https://www.swiss-it-forums.tech/en/
+- InterGeo 
+    - 12 - 14 Oct
+- mart Country Berlin 
+    - 13 - 15 Nov
+    - https://www.smartcountry.berlin/de
+- Geosquare Gebruikersdag 
+    - 27, 28 Oct
+- GeoBuzz 
+    - 16, 17 Nov - 3000e
+- Infratech Rotterdam 
+    - 12 - 15 Jan - 3000e
+- Geospatial world 
+    - 20 - 22 April
+- FOSS4G NL 
+    - 8,9 July
+- QGIS 
+    - 5, 6 October
+- Foss4G 
+    - several during the year

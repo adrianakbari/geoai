@@ -1,7 +1,32 @@
+# Newsletter email list:
+[peterpaul.koonings@geosquare.nl,maarten.van.der.hoek@geosquare.nl,douwe.blanksma@geosquare.nl,harco.de.jager@d2win.nl,robert@erbeegeo.nl,marlex@marlex.nl,jeroen.ticheler@geocat.com,j.deleeuw@net4s.nl,jtromp@datacollectors.net,emmanuel@digitalpathlines.ch,djoerd@giscovery.com,nalameh@lunateai.com,caroline_robinson@posteo.net,stany.luyet@ig-group.ch]
+to be added: [Jsorensen@bgcengineering.ca,Wenzel@iaccess.de,W.balster@amsterdam.nl,Twm.vander.horst@zeeland.nl,Ej.leemreijze@zeeland.nl,m.kassing@swbm.de,a.weber@geogrid.ch,Francois.voisard@ne.ch]
+
+
+# Target Audience More Niche
+At this stage its too soon to target general "Municipality" as our target client. we need to find clients that have a problem/need/urgency.
+--> who is already moving from esri
+--> who cant afford esri: SMEs, real estate, contractors, construction
+--> who is obliged to be sovereign and OS: see opensourcewerken.nl those organizations (PZH, MBZ, Alliander,..) are already started moving towards this
+--> engineering companies who are servicing municipalities: all around europe. 
+    --> those who dont have a very good developers team.
+
+
 # Geosquare 
 - Peter Paul Koonings
 - Douwe
-- Laatste gesprek met PP 24.06.2026
+- Gesprek 09.09.2026
+    - Goal: Ze willen aan klanten laten zien dat ze iets doen met AI. dat ze bezig zijn. 
+    - Wie zijn de audience / users? Voornamelijk van Gemeenten en Utiliteit sector. 
+    - Competitors van geosquare: Mapgear
+    - Gebruikers dag: 
+        - 180 mensen zijn aangemeld. 
+        - ik kan 70 - 80 mensen verwachten voor mijn sessie
+    - [Limitations] [Expertise] [people] Geonovation: 6 people 2 developers. problem with developers: old 50 years old guys who doesnt like to work with AI beacuase AI consumes a lot of energy. he doesnt like to go to the clients and talk to them. they are not pro innovation
+    - [Limitations] [Expertise] [people] Onemap (Geoexperts) has 20 people where 5 dev. their issue is same as above. 
+    - Other projects they are working with: FME lite bouwen: building an ETL engine. this is also where GeoAI can help.
+
+- Gesprek met PP 24.06.2026
     - belangrijkste punt: integrate our GeoAI into their software. to have a chat widget in their front end. the chat takes the question, sends it via the api to backend and backend does the processing and manipulates the front end web viewer components in a way that visualizes the results on the web in map and on dashboard widgets and ....
     they have a conference on 27 okt that they want to show their clients that they have some kind of AI in their suite. en dan een concrete plan maken dat tot Jan of zo kan echt gerealizeerd worden en in productie gebeuren.
     - authnz moet gebeuren via hun API. welke data mag getoond worden aan welke client
@@ -17,7 +42,36 @@
 ## Peter Paul 
 Founder of Geonovation. grew to 10 man. sold it to geosquare. he is the CTO of the geosquare nu. 
 
+# Nadine Lunate AI
+website: https://www.lunateai.com/
+## Latest Conversation with Nadine on 31.08.2026:
+- Create a Powerpoint Pitch in YC Combinator Format. and send it to her. --> then plan the next meeting. 
+- Lunate can help me finding investors, initial clients and introduce me in her network. she asks for equity. 
+    - [X] there is also another option that she joins the meetings and do the feedback together with me. for that she asks for equity + money. 
+- [sales_intel] Sparkgeo and element 84 are losing clients becuase big organizations can do the AI development by themselves and small organizations dont have the money to pay the, 
+- [Resources]
+    - Carto : https://carto.com/blog/all-of-carto-in-every-agent/
+    - Mapchat
+    - AEC from Dubai --> Real Estate department
+    - Map Africa from microsoft
+
+
 # Provincie Zuid Holland
+# Sep 2026
+their goal: 
+    - the director of water and environment siiting in a meeting. they neeed a chat bot that gives them correct actual data for decision making when they need it. for example when military sites overlap with nature and stuff
+    - to shift from openAI llms to host their own models
+- they officially started a project for 2 years. 7 developers are working on it. 
+- Stack:
+    - data bricks
+    - embeddings done via AI search Index of data bricks
+    - LLM: open AI
+- architecture: 
+    - DGGS
+    - Agents --> they havent started it yet. 
+    - Knowledge graphs
+
+# June 2026
 Paticipated in FOSS4G with 17 people
 AI architect: Thijs oosterhuis 
 AI data: Sebastiaan Schmidt
@@ -27,6 +81,11 @@ They are using openai tokens.
 They also presented in kennis kring geoai 
 
 # Jeroen Ticheler GeoCat
+## Sept 2026
+Geocommons has won the funding now they have the grant available: 
+https://nlnet.nl/geocommons/
+
+## june 2026
 applied for geocommons 
 GeoCommons (jeroen thieler presentation)
 A European incubator for geospatial open source
@@ -94,6 +153,7 @@ years of experience: 30 years
 - next session: send him investor pitch. and a follow up message if he likes to coach me. 
 
 # Octavian Borca
+latest conv: we make a deal to work for success fee. each successful project he brings he will take a fee. we still need to agree on a fee. 
 worked with:    swiss pot
 
 # Net4s
@@ -106,3 +166,7 @@ find similar comanies like this: every contractor that is contracting for Gemeen
 
 # Jeffrey
 send updates
+
+# Gemeente Amsterdam
+open data portal: 
+https://kaartviewer.amsterdam.nl/dashboards/?menuId=b8320cf2-57e7-44be-90eb-a9cde3574321

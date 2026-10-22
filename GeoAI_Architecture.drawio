@@ -1,0 +1,694 @@
+<mxfile host="Electron" modified="2026-10-03T18:05:42.704Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.0.4 Chrome/120.0.6099.109 Electron/28.1.0 Safari/537.36" etag="lv9Ur0U8xUDNQ5Dj5ee3" version="24.0.4" type="device">
+  <diagram name="Page-1" id="5MHFMGN9zOMkwKYGm5NL">
+    <mxGraphModel dx="1313" dy="1886" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="fFe-u9g-dFOo95ER1akG-44" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="fFe-u9g-dFOo95ER1akG-1" target="fFe-u9g-dFOo95ER1akG-12" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fFe-u9g-dFOo95ER1akG-1" value="Chat&lt;div&gt;Meta&lt;/div&gt;&lt;div&gt;GIS&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;rotation=0;" parent="1" vertex="1">
+          <mxGeometry x="240" y="-505" width="120" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="fFe-u9g-dFOo95ER1akG-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.75;entryDx=0;entryDy=0;" parent="1" source="fFe-u9g-dFOo95ER1akG-2" target="fFe-u9g-dFOo95ER1akG-12" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="380" y="-150" />
+              <mxPoint x="380" y="-260" />
+              <mxPoint x="750" y="-260" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fFe-u9g-dFOo95ER1akG-2" value="User" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" parent="1" vertex="1">
+          <mxGeometry x="140" y="-180" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="fFe-u9g-dFOo95ER1akG-49" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="fFe-u9g-dFOo95ER1akG-4" target="fFe-u9g-dFOo95ER1akG-12" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="975" y="-820" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fFe-u9g-dFOo95ER1akG-4" value="" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="490" y="-970" width="210" height="260" as="geometry" />
+        </mxCell>
+        <mxCell id="fFe-u9g-dFOo95ER1akG-5" value="Assistant Module&lt;div&gt;UI&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="230" y="-550" width="130" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="fFe-u9g-dFOo95ER1akG-7" value="- Chat defines if its a normal question that LLM can answer or not.&amp;nbsp;&lt;div&gt;- Meta: if the question requires data from our system. what tables we have and general informationa bout our data and system&lt;/div&gt;&lt;div&gt;- GIS: defines tath your question needs calculations and operations and analysis/&amp;nbsp;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="180" y="-720" width="260" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="fFe-u9g-dFOo95ER1akG-11" value="Catalogue returns a&amp;nbsp;&lt;div&gt;list of related layers&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="720" y="-820" width="130" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="fFe-u9g-dFOo95ER1akG-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="fFe-u9g-dFOo95ER1akG-12" target="fFe-u9g-dFOo95ER1akG-25" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fFe-u9g-dFOo95ER1akG-42" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="fFe-u9g-dFOo95ER1akG-12" target="fFe-u9g-dFOo95ER1akG-2" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="460" y="-230" />
+              <mxPoint x="460" y="-130" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fFe-u9g-dFOo95ER1akG-45" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="fFe-u9g-dFOo95ER1akG-12" target="fFe-u9g-dFOo95ER1akG-4" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="990" y="-840" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fFe-u9g-dFOo95ER1akG-12" value="Orchestrator" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="750" y="-681.25" width="450" height="502.5" as="geometry" />
+        </mxCell>
+        <mxCell id="fFe-u9g-dFOo95ER1akG-14" value="its a decision maker&lt;div&gt;take all the layers from catalogue search and define&amp;nbsp;&lt;/div&gt;&lt;div&gt;which layers are most relevant (layer selection)&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="800" y="-650" width="300" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="fFe-u9g-dFOo95ER1akG-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="fFe-u9g-dFOo95ER1akG-15" target="fFe-u9g-dFOo95ER1akG-17" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fFe-u9g-dFOo95ER1akG-15" value="Decision Maker" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="890" y="-580" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="fFe-u9g-dFOo95ER1akG-16" value="few selected layers" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="880" y="-530" width="130" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="fFe-u9g-dFOo95ER1akG-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="fFe-u9g-dFOo95ER1akG-17" target="fFe-u9g-dFOo95ER1akG-19" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fFe-u9g-dFOo95ER1akG-17" value="Plan generator" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="890" y="-445" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="fFe-u9g-dFOo95ER1akG-18" value="takes selected layers and the data . define operation needed (aggregate, buffer, etc) and creates the plan" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="850" y="-500" width="215" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="fFe-u9g-dFOo95ER1akG-19" value="Sanitizer" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="890" y="-310" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="fFe-u9g-dFOo95ER1akG-20" value="Review generated output of modules above and makes sure its correct" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="857.5" y="-370" width="200" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="fFe-u9g-dFOo95ER1akG-25" value="Executer" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="1310" y="-460" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="fFe-u9g-dFOo95ER1akG-33" value="Orchestrator" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="810" y="-740" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="fFe-u9g-dFOo95ER1akG-34" value="Runs operations with parameters given by orchestrator (planner)" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="1310" y="-540" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="fFe-u9g-dFOo95ER1akG-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.427;entryY=1.004;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="fFe-u9g-dFOo95ER1akG-25" target="fFe-u9g-dFOo95ER1akG-12" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1460" y="-430" />
+              <mxPoint x="1460" y="-70" />
+              <mxPoint x="942" y="-70" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fFe-u9g-dFOo95ER1akG-36" value="returns the output to orchestrator. orchestrator creates a summary and give it to user" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="1058" y="-110" width="312" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="fFe-u9g-dFOo95ER1akG-40" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="550" y="1385" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fFe-u9g-dFOo95ER1akG-46" value="Catalogue" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="540" y="-1000" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="fFe-u9g-dFOo95ER1akG-47" value="Catalogue Search" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="520" y="-930" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="fFe-u9g-dFOo95ER1akG-48" value="Catalogue Generation" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="520" y="-820" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="c4u1z995TcXVELSquNpL-1" value="Geo&amp;nbsp;&lt;div&gt;Centcom&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+          <mxGeometry x="655" y="350" width="190" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="c4u1z995TcXVELSquNpL-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="c4u1z995TcXVELSquNpL-2" target="c4u1z995TcXVELSquNpL-6" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c4u1z995TcXVELSquNpL-2" value="Understand What Data is in the (Geo) Database" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+          <mxGeometry x="983" y="200" width="110" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="c4u1z995TcXVELSquNpL-3" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.034;entryY=0.622;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" target="c4u1z995TcXVELSquNpL-2" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="805" y="370" as="sourcePoint" />
+            <mxPoint x="855" y="320" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c4u1z995TcXVELSquNpL-4" value="Connect to (Geo) Database" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;rotation=-30;" parent="1" vertex="1">
+          <mxGeometry x="785" y="290" width="170" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="c4u1z995TcXVELSquNpL-6" value="Answer Queries&lt;div&gt;and Questions&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+          <mxGeometry x="1155" y="195" width="120" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="c4u1z995TcXVELSquNpL-8" value="ETL Operations:&amp;nbsp;&lt;div&gt;Data cleaning, Noise Reducing , Formatting, etc&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+          <mxGeometry x="860" y="100" width="120" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="c4u1z995TcXVELSquNpL-10" value="Fetch or Create Data" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+          <mxGeometry x="1025" y="330" width="90" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="c4u1z995TcXVELSquNpL-11" value="" style="endArrow=classic;html=1;rounded=0;entryX=-0.036;entryY=0.627;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" target="c4u1z995TcXVELSquNpL-10" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="845" y="430" as="sourcePoint" />
+            <mxPoint x="895" y="380" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c4u1z995TcXVELSquNpL-12" value="Connect to external sources" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;rotation=-15;" parent="1" vertex="1">
+          <mxGeometry x="835" y="380" width="170" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="c4u1z995TcXVELSquNpL-13" value="Satelitte Images" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+          <mxGeometry x="1125" y="380" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="c4u1z995TcXVELSquNpL-14" value="Sensor Data" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+          <mxGeometry x="1205" y="420" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="c4u1z995TcXVELSquNpL-16" value="" style="endArrow=classic;html=1;rounded=0;" parent="1" source="c4u1z995TcXVELSquNpL-1" target="c4u1z995TcXVELSquNpL-13" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="895" y="480" as="sourcePoint" />
+            <mxPoint x="945" y="430" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c4u1z995TcXVELSquNpL-17" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.984;exitY=0.637;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="c4u1z995TcXVELSquNpL-1" target="c4u1z995TcXVELSquNpL-14" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="845" y="530" as="sourcePoint" />
+            <mxPoint x="895" y="480" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c4u1z995TcXVELSquNpL-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="c4u1z995TcXVELSquNpL-18" target="c4u1z995TcXVELSquNpL-22" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c4u1z995TcXVELSquNpL-18" value="Understands where is what: Python scripts , FME Scripts, SQL scripts, Documentations,...." style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+          <mxGeometry x="1063" y="510" width="130" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="c4u1z995TcXVELSquNpL-20" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.916;exitY=0.81;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="c4u1z995TcXVELSquNpL-1" target="c4u1z995TcXVELSquNpL-18" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="865" y="540" as="sourcePoint" />
+            <mxPoint x="915" y="490" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c4u1z995TcXVELSquNpL-21" value="Connect to file systems" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;rotation=15;" parent="1" vertex="1">
+          <mxGeometry x="860" y="505" width="150" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="c4u1z995TcXVELSquNpL-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="c4u1z995TcXVELSquNpL-22" target="c4u1z995TcXVELSquNpL-24" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c4u1z995TcXVELSquNpL-22" value="Answer Queries&lt;div&gt;and Questions,&lt;/div&gt;&lt;div&gt;and Run Scripts&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+          <mxGeometry x="1245" y="515" width="120" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="c4u1z995TcXVELSquNpL-24" value="Write and Modify Capability" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+          <mxGeometry x="1405" y="515" width="120" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="c4u1z995TcXVELSquNpL-26" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.759;exitY=0.93;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.085;entryY=0.253;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="c4u1z995TcXVELSquNpL-1" target="c4u1z995TcXVELSquNpL-27" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="785" y="610" as="sourcePoint" />
+            <mxPoint x="925" y="660" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c4u1z995TcXVELSquNpL-27" value="Understand what they are, what they do and when it needs to run them" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+          <mxGeometry x="975" y="680" width="130" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="c4u1z995TcXVELSquNpL-28" value="Connect to Library of GIS Tools and Scripts" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;rotation=45;" parent="1" vertex="1">
+          <mxGeometry x="775" y="590" width="250" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="c4u1z995TcXVELSquNpL-29" value="Answer Queries&lt;div&gt;and Questions,&lt;/div&gt;&lt;div&gt;can run scripts&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+          <mxGeometry x="1125" y="780" width="120" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="c4u1z995TcXVELSquNpL-30" value="Write and Modify Capability" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+          <mxGeometry x="1280" y="880" width="120" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="c4u1z995TcXVELSquNpL-33" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.042;entryY=0.304;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="c4u1z995TcXVELSquNpL-27" target="c4u1z995TcXVELSquNpL-29" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1045" y="800" as="sourcePoint" />
+            <mxPoint x="1095" y="750" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c4u1z995TcXVELSquNpL-34" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.967;exitY=0.744;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" target="c4u1z995TcXVELSquNpL-30" edge="1" source="c4u1z995TcXVELSquNpL-29">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1181" y="840" as="sourcePoint" />
+            <mxPoint x="1220" y="870" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c4u1z995TcXVELSquNpL-35" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="c4u1z995TcXVELSquNpL-1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="735" y="630" as="sourcePoint" />
+            <mxPoint x="745" y="770" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c4u1z995TcXVELSquNpL-39" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="c4u1z995TcXVELSquNpL-36" target="c4u1z995TcXVELSquNpL-38" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c4u1z995TcXVELSquNpL-36" value="Azure ADO Board&amp;nbsp;&lt;div&gt;SAP&lt;/div&gt;&lt;div&gt;Other Ticketing and Scrum Sitems&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+          <mxGeometry x="680" y="770" width="140" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="c4u1z995TcXVELSquNpL-37" value="Connect to Scrum Boards and Tickets&amp;nbsp;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;rotation=-90;" parent="1" vertex="1">
+          <mxGeometry x="615" y="635" width="230" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="c4u1z995TcXVELSquNpL-38" value="Understand which data, scripts, web apps, ...&amp;nbsp;&lt;div&gt;is related to the problem.&amp;nbsp;&lt;/div&gt;&lt;div&gt;search hiostory of relevant tickets.&amp;nbsp;&lt;/div&gt;&lt;div&gt;propose a solution pointing to a file, script, app&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+          <mxGeometry x="650" y="950" width="200" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="c4u1z995TcXVELSquNpL-40" value="Update Web Viewer&amp;nbsp;&lt;div&gt;Based on the chat&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+          <mxGeometry x="435" y="730" width="140" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="c4u1z995TcXVELSquNpL-41" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.766;entryY=0.06;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0;exitY=1;exitDx=0;exitDy=0;" parent="1" source="c4u1z995TcXVELSquNpL-1" target="c4u1z995TcXVELSquNpL-40" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="595" y="630" as="sourcePoint" />
+            <mxPoint x="645" y="580" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c4u1z995TcXVELSquNpL-42" value="Connect to Web Viewers" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;rotation=-60;" parent="1" vertex="1">
+          <mxGeometry x="505" y="630" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="c4u1z995TcXVELSquNpL-43" value="DevOps&lt;div&gt;Publish a WFS/WMS, ArcGIS Service&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+          <mxGeometry x="310" y="570" width="120" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="c4u1z995TcXVELSquNpL-44" value="" style="endArrow=classic;html=1;rounded=0;" parent="1" source="c4u1z995TcXVELSquNpL-1" target="c4u1z995TcXVELSquNpL-43" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="495" y="550" as="sourcePoint" />
+            <mxPoint x="545" y="500" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c4u1z995TcXVELSquNpL-45" value="Connect toGIS Servers&lt;div&gt;OGC API, GeoServer, ArcGIS Server&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;rotation=-25;" parent="1" vertex="1">
+          <mxGeometry x="415" y="505" width="220" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="c4u1z995TcXVELSquNpL-46" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.09;exitY=0.224;exitDx=0;exitDy=0;exitPerimeter=0;dashed=1;dashPattern=12 12;" parent="1" source="c4u1z995TcXVELSquNpL-1" target="c4u1z995TcXVELSquNpL-47" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="595" y="350" as="sourcePoint" />
+            <mxPoint x="525" y="370" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c4u1z995TcXVELSquNpL-47" value="Run operations in GeoLibre/ QGIS / ArcGIS" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;dashed=1;dashPattern=8 8;" parent="1" vertex="1">
+          <mxGeometry x="260" y="235" width="140" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="c4u1z995TcXVELSquNpL-48" value="? Connect to GIS Desktop Software: QGIS/ArcGIS ?" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;rotation=15;" parent="1" vertex="1">
+          <mxGeometry x="400" y="330" width="300" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="c4u1z995TcXVELSquNpL-61" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.072;entryY=0.805;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" target="c4u1z995TcXVELSquNpL-8" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="765" y="350" as="sourcePoint" />
+            <mxPoint x="815" y="300" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c4u1z995TcXVELSquNpL-62" value="Data Engineering" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;rotation=-60;" parent="1" vertex="1">
+          <mxGeometry x="740" y="250" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Rhe0-Jxv2hhzxxwk4ome-2" value="Query" style="shape=callout;whiteSpace=wrap;html=1;perimeter=calloutPerimeter;" parent="1" vertex="1">
+          <mxGeometry x="150" y="2600" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Rhe0-Jxv2hhzxxwk4ome-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="Rhe0-Jxv2hhzxxwk4ome-3" target="Rhe0-Jxv2hhzxxwk4ome-5" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Rhe0-Jxv2hhzxxwk4ome-3" value="User" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" parent="1" vertex="1">
+          <mxGeometry x="191" y="2690" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Rhe0-Jxv2hhzxxwk4ome-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="Rhe0-Jxv2hhzxxwk4ome-5" target="Rhe0-Jxv2hhzxxwk4ome-7" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Rhe0-Jxv2hhzxxwk4ome-5" value="Understand the question: LLM" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="320" y="2690" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="fIjkm5yyzVfrihKGj_cK-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="Rhe0-Jxv2hhzxxwk4ome-7" target="Rhe0-Jxv2hhzxxwk4ome-25" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Rhe0-Jxv2hhzxxwk4ome-7" value="&lt;div&gt;[Data Planner]&lt;/div&gt;Define datasets + attributes needed to answer this question" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="490" y="2690" width="180" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Rhe0-Jxv2hhzxxwk4ome-9" value="&lt;div&gt;Example:&lt;/div&gt;Show me trees higher than 3m in Wijk Amsterdamse Bos within 5m from water canals not close by playgrounds that have not been trimmed for the last 2 years" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;dashPattern=8 8;fillColor=#FFF1E0;strokeColor=#d79b00;glass=0;shadow=0;textShadow=0;" parent="1" vertex="1">
+          <mxGeometry x="126" y="2480" width="184" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="Rhe0-Jxv2hhzxxwk4ome-10" value="&lt;div style=&quot;text-align: center;&quot;&gt;Example:&lt;/div&gt;- trees&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;- Height&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;- Last trim date&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;- Geomtery&lt;/div&gt;&lt;div&gt;&lt;div&gt;- water canals&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;- Geomtery&lt;br&gt;&lt;/div&gt;&lt;div&gt;- playgrounds&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;- Geomtery&lt;br&gt;&lt;/div&gt;&lt;div&gt;- Wijk Amsterdamse Bos&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;- Geomtery&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;dashPattern=8 8;fillColor=#FFF1E0;strokeColor=#d79b00;glass=0;shadow=0;textShadow=0;align=left;" parent="1" vertex="1">
+          <mxGeometry x="480" y="2485" width="200" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="Rhe0-Jxv2hhzxxwk4ome-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="Rhe0-Jxv2hhzxxwk4ome-61" target="Rhe0-Jxv2hhzxxwk4ome-28" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="950" y="2732.5" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Rhe0-Jxv2hhzxxwk4ome-62" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="Rhe0-Jxv2hhzxxwk4ome-25" target="Rhe0-Jxv2hhzxxwk4ome-61" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Rhe0-Jxv2hhzxxwk4ome-25" value="Define geographical extent of the question" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="710" y="2690" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Rhe0-Jxv2hhzxxwk4ome-27" value="&lt;div style=&quot;text-align: center;&quot;&gt;Geographical bounding box of Wijk Amsterdamse Bos&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;dashPattern=8 8;fillColor=#FFF1E0;strokeColor=#d79b00;glass=0;shadow=0;textShadow=0;align=left;" parent="1" vertex="1">
+          <mxGeometry x="690" y="2600" width="160" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="Rhe0-Jxv2hhzxxwk4ome-64" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="Rhe0-Jxv2hhzxxwk4ome-28" target="Rhe0-Jxv2hhzxxwk4ome-63" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Rhe0-Jxv2hhzxxwk4ome-28" value="Define Spatial Relationship between objects (DE-I9M)" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="1040" y="2690" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Rhe0-Jxv2hhzxxwk4ome-30" value="&lt;div style=&quot;&quot;&gt;- trees inside&amp;nbsp;&lt;span style=&quot;text-align: center; background-color: initial;&quot;&gt;Wijk Amsterdamse Bos&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;- water canals inside&amp;nbsp;&lt;span style=&quot;text-align: center; background-color: initial;&quot;&gt;Wijk Amsterdamse Bos&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;- Playgrounds inside&amp;nbsp;&lt;span style=&quot;text-align: center; background-color: initial;&quot;&gt;Wijk Amsterdamse Bos&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;text-align: center; background-color: initial;&quot;&gt;- Trees within 5m from water canals&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;text-align: center; background-color: initial;&quot;&gt;- Trees not close by playgrounds&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;text-align: center; background-color: initial;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;dashPattern=8 8;fillColor=#FFF1E0;strokeColor=#d79b00;glass=0;shadow=0;textShadow=0;align=left;" parent="1" vertex="1">
+          <mxGeometry x="1010" y="2491.25" width="180" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="Rhe0-Jxv2hhzxxwk4ome-61" value="&lt;div&gt;&lt;font color=&quot;#00cc00&quot;&gt;[Roadmap Feature]&lt;/font&gt;&lt;/div&gt;Define temporal extent of the question" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;dashPattern=8 8;" parent="1" vertex="1">
+          <mxGeometry x="875" y="2690" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Rhe0-Jxv2hhzxxwk4ome-80" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="Rhe0-Jxv2hhzxxwk4ome-63" target="Rhe0-Jxv2hhzxxwk4ome-67" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1690" y="2720" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Rhe0-Jxv2hhzxxwk4ome-63" value="&lt;div&gt;[GIS Planner]&lt;/div&gt;Define GIS Operations needed to answer this question. Break down the complete question into smallest chunks that can be done with 1 operation.&amp;nbsp;&lt;div&gt;In other words, what steps an expert GIS Anlyst will take to answer this question?&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="1230" y="2661.5" width="380" height="117" as="geometry" />
+        </mxCell>
+        <mxCell id="Rhe0-Jxv2hhzxxwk4ome-65" value="&lt;div style=&quot;&quot;&gt;Step 1: Intersect trees that are higher than 3 m and their last trim data &amp;lt; 01.01.2024 with bounding box extent of wijk amsterdamse bos --&amp;gt; return intermediate layer &quot;trees_in_amsterdamse_bos&quot;&amp;nbsp;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;Step 2: Intersect water canals with geom bounding box of&amp;nbsp; Amsterdamse bos --&amp;gt;&amp;nbsp;&lt;span style=&quot;background-color: initial;&quot;&gt;return intermediate layer &quot;canals_in_amsterdamse_bos&quot;&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Step 3: I&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;ntersect playgrounds with geom bounding box of&amp;nbsp; Amsterdamse bos --&amp;gt;&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;return intermediate layer &quot;playgrounds_in_amsterdamse_bos&quot;&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Step 4: Buffer&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&quot;canals_in_amsterdamse_bos&quot; with radius of 5m --&amp;gt; return intermediate layer &quot;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;canals_in_amsterdamse_bos_buffer_5m&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&quot;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Step 5:&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Buffer&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&quot;playgrounds_in_amsterdamse_bos&quot; with radius of {interpretation of close by. ie. 10m} --&amp;gt; return intermediate layer &quot;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;playgrounds_in_amsterdamse_bos_buffer_10m&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&quot;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Step 6: Intersect&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&quot;trees_in_amsterdamse_bos&quot; with&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;canals_in_amsterdamse_bos_buffer_5m&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&quot; --&amp;gt; return intermediate layer &quot;trees_within_5m_of_canals&quot;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Step 7: overlay&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&quot;trees_within_5m_of_canals&quot; with&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&quot;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;playgrounds_in_amsterdamse_bos_buffer_10m&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&quot; find trees that do not intersect with playgrounds --&amp;gt; return final layer&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;dashPattern=8 8;fillColor=#FFF1E0;strokeColor=#d79b00;glass=0;shadow=0;textShadow=0;align=left;" parent="1" vertex="1">
+          <mxGeometry x="1215" y="2230" width="395" height="410" as="geometry" />
+        </mxCell>
+        <mxCell id="Rhe0-Jxv2hhzxxwk4ome-66" value="&lt;div style=&quot;text-align: center;&quot;&gt;Last 2 years = 2024 - 2026&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;dashPattern=8 8;fillColor=#FFF1E0;strokeColor=#d79b00;glass=0;shadow=0;textShadow=0;align=left;" parent="1" vertex="1">
+          <mxGeometry x="877.5" y="2580" width="115" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="Rhe0-Jxv2hhzxxwk4ome-67" value="Data Orchestrator&lt;br&gt;(Mother)&lt;div&gt;Spawns a sub agent for each dataset needed. Collects and Recieves the results of each child&lt;/div&gt;&lt;div&gt;Input is the result of [Data Planner]&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+          <mxGeometry x="1787.5" y="2642.5" width="157.5" height="157.5" as="geometry" />
+        </mxCell>
+        <mxCell id="Rhe0-Jxv2hhzxxwk4ome-82" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="Rhe0-Jxv2hhzxxwk4ome-68" target="Rhe0-Jxv2hhzxxwk4ome-79" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1877.5" y="2500" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Rhe0-Jxv2hhzxxwk4ome-68" value="&lt;div&gt;Data Finder 1:&lt;/div&gt;Tree Finder" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+          <mxGeometry x="1825" y="2540" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Rhe0-Jxv2hhzxxwk4ome-69" value="Water canal Finder" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+          <mxGeometry x="1990" y="2610" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Rhe0-Jxv2hhzxxwk4ome-70" value="Playground Finder" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+          <mxGeometry x="1957.5" y="2787.5" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Rhe0-Jxv2hhzxxwk4ome-71" value="Wijk Finder" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+          <mxGeometry x="1730" y="2800" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Rhe0-Jxv2hhzxxwk4ome-72" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;entryX=0.039;entryY=0.746;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.987;exitY=0.398;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="Rhe0-Jxv2hhzxxwk4ome-67" target="Rhe0-Jxv2hhzxxwk4ome-69" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1900" y="2710" as="sourcePoint" />
+            <mxPoint x="1950" y="2660" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Rhe0-Jxv2hhzxxwk4ome-73" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" parent="1" source="Rhe0-Jxv2hhzxxwk4ome-67" target="Rhe0-Jxv2hhzxxwk4ome-68" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1909" y="2721" as="sourcePoint" />
+            <mxPoint x="1943" y="2707" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Rhe0-Jxv2hhzxxwk4ome-74" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;entryX=1;entryY=1;entryDx=0;entryDy=0;" parent="1" source="Rhe0-Jxv2hhzxxwk4ome-70" target="Rhe0-Jxv2hhzxxwk4ome-67" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1919" y="2731" as="sourcePoint" />
+            <mxPoint x="1953" y="2717" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Rhe0-Jxv2hhzxxwk4ome-75" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;entryX=1;entryY=0;entryDx=0;entryDy=0;exitX=0;exitY=1;exitDx=0;exitDy=0;" parent="1" source="Rhe0-Jxv2hhzxxwk4ome-67" target="Rhe0-Jxv2hhzxxwk4ome-71" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1929" y="2741" as="sourcePoint" />
+            <mxPoint x="1963" y="2727" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Rhe0-Jxv2hhzxxwk4ome-76" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;entryX=0.04;entryY=0.293;entryDx=0;entryDy=0;exitX=1;exitY=1;exitDx=0;exitDy=0;entryPerimeter=0;" parent="1" source="Rhe0-Jxv2hhzxxwk4ome-77" target="Rhe0-Jxv2hhzxxwk4ome-67" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1939" y="2751" as="sourcePoint" />
+            <mxPoint x="1973" y="2737" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Rhe0-Jxv2hhzxxwk4ome-77" value="X Finder" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+          <mxGeometry x="1700" y="2590" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Rhe0-Jxv2hhzxxwk4ome-83" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="Rhe0-Jxv2hhzxxwk4ome-79" target="Rhe0-Jxv2hhzxxwk4ome-81" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Rhe0-Jxv2hhzxxwk4ome-79" value="&lt;div style=&quot;&quot;&gt;Your job is to find Trees inside wijk Amsterdamse Bos that are taller than 3m and have not been trimmed since&amp;nbsp;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;01.01.2024&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;dashPattern=8 8;fillColor=#FFF1E0;strokeColor=#d79b00;glass=0;shadow=0;textShadow=0;align=left;" parent="1" vertex="1">
+          <mxGeometry x="1785" y="2300" width="160" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="Rhe0-Jxv2hhzxxwk4ome-85" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="Rhe0-Jxv2hhzxxwk4ome-81" target="Rhe0-Jxv2hhzxxwk4ome-84" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Rhe0-Jxv2hhzxxwk4ome-81" value="&lt;div style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Search our &lt;b&gt;internal database&lt;/b&gt;:&lt;/span&gt;&lt;/div&gt;&lt;div&gt;-&amp;nbsp; where do we find trees?&amp;nbsp;&lt;/div&gt;&lt;div&gt;- where do I find {attribute 1: tree height}?&amp;nbsp;&lt;/div&gt;&lt;div&gt;- where do I find&amp;nbsp;&lt;span style=&quot;background-color: initial;&quot;&gt;{attribute 2:&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;trees last trim date}?&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;- where do I find&amp;nbsp;&lt;span style=&quot;background-color: initial;&quot;&gt;{attribute 3:&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;trees geometry? }&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;- How can I connect them all? attribute join, spatial join, etc?&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;- [road map feature] Do we need ETL or Statistical operations ? for example aggregating columns, mean, average, median,...?&amp;nbsp;&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
+          <mxGeometry x="1773.75" y="2060" width="182.5" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="Rhe0-Jxv2hhzxxwk4ome-88" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="Rhe0-Jxv2hhzxxwk4ome-84" target="Rhe0-Jxv2hhzxxwk4ome-87" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Rhe0-Jxv2hhzxxwk4ome-84" value="&lt;div&gt;&lt;span style=&quot;color: rgb(0, 204, 0); background-color: initial;&quot;&gt;[Roadmap Feature]&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;For each missing data:&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;search directory of trusted &lt;b&gt;external sources&lt;/b&gt;.&lt;/div&gt;&lt;div&gt;answer same questions:&lt;br&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;div&gt;-&amp;nbsp; where do we find trees?&amp;nbsp;&lt;/div&gt;&lt;div&gt;- where do I find {attribute 1: tree height}?&amp;nbsp;&lt;/div&gt;&lt;div&gt;- where do I find&amp;nbsp;&lt;span style=&quot;background-color: initial;&quot;&gt;{attribute 2:&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;trees last trim date}?&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;- where do I find&amp;nbsp;&lt;span style=&quot;background-color: initial;&quot;&gt;{attribute 3:&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;trees geometry? }&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;- How can I connect them all? attribute join, spatial join, etc?&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;dashPattern=12 12;" parent="1" vertex="1">
+          <mxGeometry x="1773.75" y="1810" width="180" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="Rhe0-Jxv2hhzxxwk4ome-86" value="report which data is missing. abort mission" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="1805" y="1550" width="120" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="Rhe0-Jxv2hhzxxwk4ome-89" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="Rhe0-Jxv2hhzxxwk4ome-87" target="Rhe0-Jxv2hhzxxwk4ome-86" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Rhe0-Jxv2hhzxxwk4ome-90" value="Y" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="Rhe0-Jxv2hhzxxwk4ome-89" vertex="1" connectable="0">
+          <mxGeometry x="0.1071" y="3" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Rhe0-Jxv2hhzxxwk4ome-92" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="Rhe0-Jxv2hhzxxwk4ome-87" target="Rhe0-Jxv2hhzxxwk4ome-91" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Rhe0-Jxv2hhzxxwk4ome-93" value="N" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="Rhe0-Jxv2hhzxxwk4ome-92" vertex="1" connectable="0">
+          <mxGeometry x="-0.0473" y="-2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Rhe0-Jxv2hhzxxwk4ome-87" value="Any data still missing?" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="1810" y="1665" width="110" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="Rhe0-Jxv2hhzxxwk4ome-94" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.833;entryY=0.115;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryPerimeter=0;" parent="1" source="Rhe0-Jxv2hhzxxwk4ome-91" target="Rhe0-Jxv2hhzxxwk4ome-67" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2020" y="1750" />
+              <mxPoint x="2020" y="2600" />
+              <mxPoint x="1925" y="2600" />
+              <mxPoint x="1925" y="2669" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Rhe0-Jxv2hhzxxwk4ome-91" value="Return the dataset to the mother" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="1990" y="1690" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Rhe0-Jxv2hhzxxwk4ome-95" value="Same as Data Finder 1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+          <mxGeometry x="2080" y="2530" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Rhe0-Jxv2hhzxxwk4ome-97" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=1;entryDx=0;entryDy=0;" parent="1" target="Rhe0-Jxv2hhzxxwk4ome-95" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2060" y="2620" as="sourcePoint" />
+            <mxPoint x="2110" y="2570" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Rhe0-Jxv2hhzxxwk4ome-98" value="Same as Data Finder 1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+          <mxGeometry x="2050" y="2872.5" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Rhe0-Jxv2hhzxxwk4ome-99" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0;entryDx=0;entryDy=0;exitX=1;exitY=1;exitDx=0;exitDy=0;" parent="1" source="Rhe0-Jxv2hhzxxwk4ome-70" target="Rhe0-Jxv2hhzxxwk4ome-98" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2030" y="2962.5" as="sourcePoint" />
+            <mxPoint x="2080" y="2912.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Rhe0-Jxv2hhzxxwk4ome-100" value="Same as Data Finder 1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+          <mxGeometry x="1650" y="2872.5" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Rhe0-Jxv2hhzxxwk4ome-101" value="" style="endArrow=classic;html=1;rounded=0;entryX=1;entryY=0;entryDx=0;entryDy=0;exitX=0;exitY=1;exitDx=0;exitDy=0;" parent="1" source="Rhe0-Jxv2hhzxxwk4ome-71" target="Rhe0-Jxv2hhzxxwk4ome-100" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1640" y="2867.5" as="sourcePoint" />
+            <mxPoint x="1694" y="2924" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Rhe0-Jxv2hhzxxwk4ome-102" value="Same as Data Finder 1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+          <mxGeometry x="1620" y="2510" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Rhe0-Jxv2hhzxxwk4ome-103" value="" style="endArrow=classic;html=1;rounded=0;entryX=1;entryY=1;entryDx=0;entryDy=0;exitX=0;exitY=0;exitDx=0;exitDy=0;" parent="1" source="Rhe0-Jxv2hhzxxwk4ome-77" target="Rhe0-Jxv2hhzxxwk4ome-102" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1680" y="2470" as="sourcePoint" />
+            <mxPoint x="1734" y="2526.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Rhe0-Jxv2hhzxxwk4ome-104" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="Rhe0-Jxv2hhzxxwk4ome-67" target="Rhe0-Jxv2hhzxxwk4ome-105" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="2210" y="2730" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="1945" y="2730" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Rhe0-Jxv2hhzxxwk4ome-105" value="GIS Orchestrator&lt;br&gt;(Mother)&lt;div&gt;Spawns a sub agent for each GIS Ops needed. Collects and Recieves the results of each child.&lt;/div&gt;&lt;div&gt;Input is the result of [GISPlanner] and&amp;nbsp;&lt;/div&gt;&lt;div&gt;Datasets from&amp;nbsp;&lt;/div&gt;&lt;div&gt;Data Orchestrator&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+          <mxGeometry x="2385.63" y="2661.5" width="186.25" height="186.25" as="geometry" />
+        </mxCell>
+        <mxCell id="Rhe0-Jxv2hhzxxwk4ome-106" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="Rhe0-Jxv2hhzxxwk4ome-107" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="2477.5" y="2510" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Rhe0-Jxv2hhzxxwk4ome-107" value="GIS Operator 1&lt;div&gt;&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+          <mxGeometry x="2431.25" y="2540" width="92.5" height="92.5" as="geometry" />
+        </mxCell>
+        <mxCell id="Rhe0-Jxv2hhzxxwk4ome-108" value="GIS Operator 2" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+          <mxGeometry x="2605" y="2640" width="90" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="Rhe0-Jxv2hhzxxwk4ome-109" value="GIS Operator 3" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+          <mxGeometry x="2571.88" y="2800" width="92.5" height="92.5" as="geometry" />
+        </mxCell>
+        <mxCell id="Rhe0-Jxv2hhzxxwk4ome-110" value="GIS Operator 4" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+          <mxGeometry x="2308.75" y="2830" width="90" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="Rhe0-Jxv2hhzxxwk4ome-111" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;entryX=0.039;entryY=0.746;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.987;exitY=0.398;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="Rhe0-Jxv2hhzxxwk4ome-105" target="Rhe0-Jxv2hhzxxwk4ome-108" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2500" y="2720" as="sourcePoint" />
+            <mxPoint x="2550" y="2670" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Rhe0-Jxv2hhzxxwk4ome-112" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" parent="1" source="Rhe0-Jxv2hhzxxwk4ome-105" target="Rhe0-Jxv2hhzxxwk4ome-107" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2509" y="2731" as="sourcePoint" />
+            <mxPoint x="2543" y="2717" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Rhe0-Jxv2hhzxxwk4ome-113" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;entryX=1;entryY=1;entryDx=0;entryDy=0;" parent="1" source="Rhe0-Jxv2hhzxxwk4ome-109" target="Rhe0-Jxv2hhzxxwk4ome-105" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2519" y="2741" as="sourcePoint" />
+            <mxPoint x="2553" y="2727" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Rhe0-Jxv2hhzxxwk4ome-114" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;entryX=1;entryY=0;entryDx=0;entryDy=0;exitX=0;exitY=1;exitDx=0;exitDy=0;" parent="1" source="Rhe0-Jxv2hhzxxwk4ome-105" target="Rhe0-Jxv2hhzxxwk4ome-110" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2529" y="2751" as="sourcePoint" />
+            <mxPoint x="2563" y="2737" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Rhe0-Jxv2hhzxxwk4ome-115" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;entryX=0.04;entryY=0.293;entryDx=0;entryDy=0;exitX=1;exitY=1;exitDx=0;exitDy=0;entryPerimeter=0;" parent="1" source="Rhe0-Jxv2hhzxxwk4ome-116" target="Rhe0-Jxv2hhzxxwk4ome-105" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2539" y="2761" as="sourcePoint" />
+            <mxPoint x="2573" y="2747" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Rhe0-Jxv2hhzxxwk4ome-116" value="GIS Operator N" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+          <mxGeometry x="2290" y="2605" width="90" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="Rhe0-Jxv2hhzxxwk4ome-117" value="Same as GIS Operator 1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+          <mxGeometry x="2720" y="2562.5" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Rhe0-Jxv2hhzxxwk4ome-118" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=1;entryDx=0;entryDy=0;exitX=1;exitY=0;exitDx=0;exitDy=0;" parent="1" source="Rhe0-Jxv2hhzxxwk4ome-108" target="Rhe0-Jxv2hhzxxwk4ome-117" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2660" y="2630" as="sourcePoint" />
+            <mxPoint x="2710" y="2580" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Rhe0-Jxv2hhzxxwk4ome-119" value="Same as GIS Operator 1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+          <mxGeometry x="2664.38" y="2880" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Rhe0-Jxv2hhzxxwk4ome-120" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0;entryDx=0;entryDy=0;exitX=1;exitY=1;exitDx=0;exitDy=0;" parent="1" source="Rhe0-Jxv2hhzxxwk4ome-109" target="Rhe0-Jxv2hhzxxwk4ome-119" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2630" y="2972.5" as="sourcePoint" />
+            <mxPoint x="2680" y="2922.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Rhe0-Jxv2hhzxxwk4ome-121" value="Same as GIS Operator 1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+          <mxGeometry x="2228.75" y="2920" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Rhe0-Jxv2hhzxxwk4ome-122" value="" style="endArrow=classic;html=1;rounded=0;entryX=1;entryY=0;entryDx=0;entryDy=0;exitX=0;exitY=1;exitDx=0;exitDy=0;" parent="1" source="Rhe0-Jxv2hhzxxwk4ome-110" target="Rhe0-Jxv2hhzxxwk4ome-121" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2240" y="2877.5" as="sourcePoint" />
+            <mxPoint x="2294" y="2934" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Rhe0-Jxv2hhzxxwk4ome-123" value="Same as GIS Operator 1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+          <mxGeometry x="2220" y="2520" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Rhe0-Jxv2hhzxxwk4ome-124" value="" style="endArrow=classic;html=1;rounded=0;entryX=1;entryY=1;entryDx=0;entryDy=0;exitX=0;exitY=0;exitDx=0;exitDy=0;" parent="1" source="Rhe0-Jxv2hhzxxwk4ome-116" target="Rhe0-Jxv2hhzxxwk4ome-123" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2280" y="2480" as="sourcePoint" />
+            <mxPoint x="2334" y="2536.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Rhe0-Jxv2hhzxxwk4ome-128" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="Rhe0-Jxv2hhzxxwk4ome-126" target="Rhe0-Jxv2hhzxxwk4ome-127" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Rhe0-Jxv2hhzxxwk4ome-126" value="&lt;div style=&quot;&quot;&gt;Your job is to find out how you can successfully run GIS operation 1 (step1 from GIS Planner)&amp;nbsp;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;dashPattern=8 8;fillColor=#FFF1E0;strokeColor=#d79b00;glass=0;shadow=0;textShadow=0;align=left;" parent="1" vertex="1">
+          <mxGeometry x="2398.75" y="2420" width="160" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="Rhe0-Jxv2hhzxxwk4ome-130" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="Rhe0-Jxv2hhzxxwk4ome-127" target="Rhe0-Jxv2hhzxxwk4ome-129" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Rhe0-Jxv2hhzxxwk4ome-132" value="Y" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="Rhe0-Jxv2hhzxxwk4ome-130" vertex="1" connectable="0">
+          <mxGeometry x="0.1047" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Rhe0-Jxv2hhzxxwk4ome-134" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="Rhe0-Jxv2hhzxxwk4ome-127" target="Rhe0-Jxv2hhzxxwk4ome-133" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Rhe0-Jxv2hhzxxwk4ome-135" value="N" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="Rhe0-Jxv2hhzxxwk4ome-134" vertex="1" connectable="0">
+          <mxGeometry x="0.3657" y="-2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Rhe0-Jxv2hhzxxwk4ome-127" value="can we do the operation with query only on database?" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="2418" y="2330" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Rhe0-Jxv2hhzxxwk4ome-131" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="Rhe0-Jxv2hhzxxwk4ome-129" target="Rhe0-Jxv2hhzxxwk4ome-105" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2635" y="2590" />
+              <mxPoint x="2570" y="2590" />
+              <mxPoint x="2570" y="2685" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Rhe0-Jxv2hhzxxwk4ome-129" value="Run the query return the results" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="2575" y="2330" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Rhe0-Jxv2hhzxxwk4ome-136" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="Rhe0-Jxv2hhzxxwk4ome-133" target="Rhe0-Jxv2hhzxxwk4ome-129" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Rhe0-Jxv2hhzxxwk4ome-137" value="Y" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="Rhe0-Jxv2hhzxxwk4ome-136" vertex="1" connectable="0">
+          <mxGeometry x="-0.521" y="3" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Rhe0-Jxv2hhzxxwk4ome-139" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="Rhe0-Jxv2hhzxxwk4ome-133" target="Rhe0-Jxv2hhzxxwk4ome-138" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Rhe0-Jxv2hhzxxwk4ome-133" value="&lt;div&gt;&lt;span style=&quot;color: rgb(0, 204, 0);&quot;&gt;[Roadmap Feature]&lt;/span&gt;&lt;br&gt;&lt;/div&gt;Do we have any tools in our library of tools (QGIS, ArcGIS) that we can run to answer this question?" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;dashPattern=12 12;" parent="1" vertex="1">
+          <mxGeometry x="2418" y="2210" width="120" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="Rhe0-Jxv2hhzxxwk4ome-140" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="Rhe0-Jxv2hhzxxwk4ome-138" target="Rhe0-Jxv2hhzxxwk4ome-129" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Rhe0-Jxv2hhzxxwk4ome-141" value="Y" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="Rhe0-Jxv2hhzxxwk4ome-140" vertex="1" connectable="0">
+          <mxGeometry x="-0.8107" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Rhe0-Jxv2hhzxxwk4ome-144" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="Rhe0-Jxv2hhzxxwk4ome-138" target="Rhe0-Jxv2hhzxxwk4ome-142" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Rhe0-Jxv2hhzxxwk4ome-138" value="&lt;div&gt;&lt;span style=&quot;color: rgb(0, 204, 0);&quot;&gt;[Roadmap Feature]&lt;/span&gt;&lt;br&gt;&lt;/div&gt;Do we have any custom Python, FME tool in our organization&#39;s directory that can solve this problem?" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;dashPattern=12 12;" parent="1" vertex="1">
+          <mxGeometry x="2406.5" y="2090" width="142" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="Rhe0-Jxv2hhzxxwk4ome-145" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="Rhe0-Jxv2hhzxxwk4ome-142" target="Rhe0-Jxv2hhzxxwk4ome-129" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Rhe0-Jxv2hhzxxwk4ome-146" value="Y" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="Rhe0-Jxv2hhzxxwk4ome-145" vertex="1" connectable="0">
+          <mxGeometry x="-0.6855" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Rhe0-Jxv2hhzxxwk4ome-148" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="Rhe0-Jxv2hhzxxwk4ome-142" target="Rhe0-Jxv2hhzxxwk4ome-147" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Rhe0-Jxv2hhzxxwk4ome-149" value="N" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="Rhe0-Jxv2hhzxxwk4ome-148" vertex="1" connectable="0">
+          <mxGeometry x="-0.1194" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Rhe0-Jxv2hhzxxwk4ome-142" value="&lt;div&gt;[&lt;span style=&quot;color: rgb(0, 204, 0); background-color: initial;&quot;&gt;[Roadmap Feature]&lt;/span&gt;&lt;br&gt;&lt;/div&gt;Can you write any python script on-the-fly to solve this problem?" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;dashPattern=12 12;" parent="1" vertex="1">
+          <mxGeometry x="2410" y="1980" width="127.5" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Rhe0-Jxv2hhzxxwk4ome-147" value="Return operation cannot be done.&amp;nbsp;&lt;div&gt;ask for user guidance&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="2417.5" y="1890" width="120" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

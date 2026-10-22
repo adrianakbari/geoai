@@ -1,0 +1,123 @@
+<mxfile host="Electron" modified="2026-06-18T09:25:23.622Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.0.4 Chrome/120.0.6099.109 Electron/28.1.0 Safari/537.36" etag="O1DonNnhNn1_p7-Q3nZB" version="24.0.4" type="device">
+  <diagram name="Page-1" id="5MHFMGN9zOMkwKYGm5NL">
+    <mxGraphModel dx="1615" dy="2068" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="fFe-u9g-dFOo95ER1akG-44" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="fFe-u9g-dFOo95ER1akG-1" target="fFe-u9g-dFOo95ER1akG-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fFe-u9g-dFOo95ER1akG-1" value="Chat&lt;div&gt;Meta&lt;/div&gt;&lt;div&gt;GIS&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;rotation=0;" vertex="1" parent="1">
+          <mxGeometry x="320" y="275" width="120" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="fFe-u9g-dFOo95ER1akG-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.75;entryDx=0;entryDy=0;" edge="1" parent="1" source="fFe-u9g-dFOo95ER1akG-2" target="fFe-u9g-dFOo95ER1akG-12">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="460" y="630" />
+              <mxPoint x="460" y="520" />
+              <mxPoint x="830" y="520" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fFe-u9g-dFOo95ER1akG-2" value="User" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="220" y="600" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="fFe-u9g-dFOo95ER1akG-4" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="570" y="-190" width="210" height="260" as="geometry" />
+        </mxCell>
+        <mxCell id="fFe-u9g-dFOo95ER1akG-5" value="Assistant Module&lt;div&gt;UI&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="310" y="230" width="130" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="fFe-u9g-dFOo95ER1akG-7" value="- Chat defines if its a normal question that LLM can answer or not.&amp;nbsp;&lt;div&gt;- Meta: if the question requires data from our system. what tables we have and general informationa bout our data and system&lt;/div&gt;&lt;div&gt;- GIS: defines tath your question needs calculations and operations and analysis/&amp;nbsp;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="260" y="60" width="260" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="fFe-u9g-dFOo95ER1akG-11" value="Catalogue returns a&amp;nbsp;&lt;div&gt;list of related layers&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="680" y="270" width="130" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="fFe-u9g-dFOo95ER1akG-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="fFe-u9g-dFOo95ER1akG-12" target="fFe-u9g-dFOo95ER1akG-25">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fFe-u9g-dFOo95ER1akG-42" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="fFe-u9g-dFOo95ER1akG-12" target="fFe-u9g-dFOo95ER1akG-2">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="540" y="550" />
+              <mxPoint x="540" y="650" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fFe-u9g-dFOo95ER1akG-45" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="fFe-u9g-dFOo95ER1akG-12" target="fFe-u9g-dFOo95ER1akG-4">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1070" y="-60" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fFe-u9g-dFOo95ER1akG-12" value="Orchestrator" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="830" y="98.75" width="450" height="502.5" as="geometry" />
+        </mxCell>
+        <mxCell id="fFe-u9g-dFOo95ER1akG-14" value="its a decision maker&lt;div&gt;take all the layers from catalogue search and define&amp;nbsp;&lt;/div&gt;&lt;div&gt;which layers are most relevant (layer selection)&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="880" y="130" width="300" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="fFe-u9g-dFOo95ER1akG-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="fFe-u9g-dFOo95ER1akG-15" target="fFe-u9g-dFOo95ER1akG-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fFe-u9g-dFOo95ER1akG-15" value="Decision Maker" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="970" y="200" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="fFe-u9g-dFOo95ER1akG-16" value="few selected layers" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="960" y="250" width="130" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="fFe-u9g-dFOo95ER1akG-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="fFe-u9g-dFOo95ER1akG-17" target="fFe-u9g-dFOo95ER1akG-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fFe-u9g-dFOo95ER1akG-17" value="Plan generator" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="970" y="335" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="fFe-u9g-dFOo95ER1akG-18" value="takes selected layers and the data . define operation needed (aggregate, buffer, etc) and creates the plan" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="930" y="280" width="215" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="fFe-u9g-dFOo95ER1akG-19" value="Sanitizer" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="970" y="470" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="fFe-u9g-dFOo95ER1akG-20" value="Review generated output of modules above and makes sure its correct" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="937.5" y="410" width="200" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="fFe-u9g-dFOo95ER1akG-25" value="Executer" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1390" y="320" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="fFe-u9g-dFOo95ER1akG-33" value="Orchestrator" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="890" y="40" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="fFe-u9g-dFOo95ER1akG-34" value="Runs operations with parameters given by orchestrator (planner)" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1390" y="240" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="fFe-u9g-dFOo95ER1akG-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.427;entryY=1.004;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="fFe-u9g-dFOo95ER1akG-25" target="fFe-u9g-dFOo95ER1akG-12">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1540" y="350" />
+              <mxPoint x="1540" y="710" />
+              <mxPoint x="1022" y="710" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fFe-u9g-dFOo95ER1akG-36" value="returns the output to orchestrator. orchestrator creates a summary and give it to user" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1138" y="670" width="312" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="fFe-u9g-dFOo95ER1akG-40" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="fFe-u9g-dFOo95ER1akG-39">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="550" y="1385" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fFe-u9g-dFOo95ER1akG-46" value="Catalogue" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="620" y="-220" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="fFe-u9g-dFOo95ER1akG-47" value="Catalogue Search" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="600" y="-150" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="fFe-u9g-dFOo95ER1akG-48" value="Catalogue Generation" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="600" y="-40" width="120" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -1,0 +1,237 @@
+
+<style>
+.tag{display:inline-block;padding:2px 8px;border-radius:4px;font-size:11px;font-weight:500;margin:2px 2px 0 0;line-height:1.7;}
+.tp{background:#EEEDFE;color:#3C3489;}
+.tt{background:#E1F5EE;color:#085041;}
+.ta{background:#FAEEDA;color:#633806;}
+.tg{background:#F1EFE8;color:#444441;}
+.tc{background:#FAECE7;color:#712B13;}
+.tb{background:#E6F1FB;color:#0C447C;}
+@media(prefers-color-scheme:dark){
+  .tp{background:#26215C;color:#CECBF6;}
+  .tt{background:#04342C;color:#9FE1CB;}
+  .ta{background:#412402;color:#FAC775;}
+  .tg{background:#2C2C2A;color:#D3D1C7;}
+  .tc{background:#4A1B0C;color:#F5C4B3;}
+  .tb{background:#042C53;color:#B5D4F4;}
+}
+.ic{font-size:10px;font-weight:500;letter-spacing:.04em;color:var(--color-text-tertiary);margin-bottom:4px;}
+.ph{display:flex;align-items:center;gap:8px;padding:9px 14px;background:var(--color-background-secondary);border-bottom:.5px solid var(--color-border-tertiary);}
+.pn{width:22px;height:22px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:500;flex-shrink:0;}
+.pb{display:grid;grid-template-columns:1fr 1fr 1fr;gap:0;}
+.pc{padding:9px 12px;border-right:.5px solid var(--color-border-tertiary);font-size:12px;color:var(--color-text-secondary);}
+.pc:last-child{border-right:none;}
+.card{border:.5px solid var(--color-border-tertiary);border-radius:var(--border-radius-lg);margin-bottom:7px;overflow:hidden;}
+.infra{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;margin-bottom:14px;}
+.ic2{padding:9px 11px;border-radius:var(--border-radius-md);background:var(--color-background-secondary);border:.5px solid var(--color-border-tertiary);}
+.ch{display:grid;grid-template-columns:1fr 1fr 1fr;gap:6px;padding:0 4px;margin-bottom:5px;}
+.legend{display:flex;flex-wrap:wrap;gap:8px;padding:10px 0 2px;}
+.future{opacity:.6;}
+</style>
+
+<h2 class="sr-only">BD Automation Pipeline — Claude Code Architecture</h2>
+
+<div style="padding:16px 0;">
+
+<div class="infra">
+  <div class="ic2">
+    <div class="ic">PROJECT MEMORY</div>
+    <div style="font-size:12px;font-weight:500;color:var(--color-text-primary);">CLAUDE.md</div>
+    <div style="font-size:11px;color:var(--color-text-tertiary);margin-top:2px;">NL org types, GIS keywords, CRM schema, search strategy</div>
+  </div>
+  <div class="ic2">
+    <div class="ic">LIFECYCLE AUTOMATION</div>
+    <div style="font-size:12px;font-weight:500;color:var(--color-text-primary);">Hooks</div>
+    <div style="font-size:11px;color:var(--color-text-tertiary);margin-top:2px;">Checkpoint saves, error recovery, progress logging</div>
+  </div>
+  <div class="ic2">
+    <div class="ic">ASYNC NOTIFICATIONS</div>
+    <div style="font-size:12px;font-weight:500;color:var(--color-text-primary);">Channels</div>
+    <div style="font-size:11px;color:var(--color-text-tertiary);margin-top:2px;">Telegram/Discord alerts when phases complete overnight</div>
+  </div>
+  <div class="ic2">
+    <div class="ic">PARALLEL EXECUTION</div>
+    <div style="font-size:12px;font-weight:500;color:var(--color-text-primary);">Agent Teams</div>
+    <div style="font-size:11px;color:var(--color-text-tertiary);margin-top:2px;">Multiple orgs / contractors processed simultaneously</div>
+  </div>
+</div>
+
+<div class="ch">
+  <div style="font-size:10px;font-weight:500;color:var(--color-text-tertiary);">CLAUDE CODE (native)</div>
+  <div style="font-size:10px;font-weight:500;color:var(--color-text-tertiary);">MCP SERVERS</div>
+  <div style="font-size:10px;font-weight:500;color:var(--color-text-tertiary);">CUSTOM SCRIPTS (you build)</div>
+</div>
+
+<!-- Phase 1 -->
+<div class="card">
+  <div class="ph">
+    <div class="pn tp">1</div>
+    <div>
+      <div style="font-size:13px;font-weight:500;color:var(--color-text-primary);">Org discovery</div>
+      <div style="font-size:11px;color:var(--color-text-tertiary);">Find all gemeentes, waterschapen, provincies, utilities, construction companies in NL</div>
+    </div>
+  </div>
+  <div class="pb">
+    <div class="pc">
+      <span class="tag tp">skill /bd-discover-orgs</span>
+      <span class="tag tp">sub-agent: org-discovery</span>
+      <div style="margin-top:5px;font-size:11px;color:var(--color-text-tertiary);">Uses reference company to find similar orgs. Outputs structured JSON list.</div>
+    </div>
+    <div class="pc">
+      <span class="tag tt">Brave Search MCP</span>
+      <span class="tag tt">Filesystem MCP</span>
+      <div style="margin-top:5px;font-size:11px;color:var(--color-text-tertiary);">Search queries per category. Save org lists as JSON checkpoints.</div>
+    </div>
+    <div class="pc">
+      <span class="tag tg">none required</span>
+      <div style="margin-top:5px;font-size:11px;color:var(--color-text-tertiary);">Claude handles this natively via search MCP.</div>
+    </div>
+  </div>
+</div>
+
+<!-- Phase 2 -->
+<div class="card">
+  <div class="ph">
+    <div class="pn tp">2</div>
+    <div>
+      <div style="font-size:13px;font-weight:500;color:var(--color-text-primary);">GIS contractor search</div>
+      <div style="font-size:11px;color:var(--color-text-tertiary);">For each org: search gis/geo + apps/kaart/kaarten + {org name} → find contractor websites</div>
+    </div>
+  </div>
+  <div class="pb">
+    <div class="pc">
+      <span class="tag tp">skill /bd-find-contractors</span>
+      <span class="tag tp">sub-agent: gis-prospector</span>
+      <span class="tag tp">Agent Teams (parallel per org)</span>
+      <div style="margin-top:5px;font-size:11px;color:var(--color-text-tertiary);">Spawn one gis-prospector per org batch. Run in parallel with worktree isolation.</div>
+    </div>
+    <div class="pc">
+      <span class="tag tt">Brave Search MCP</span>
+      <span class="tag tt">Filesystem MCP</span>
+      <div style="margin-top:5px;font-size:11px;color:var(--color-text-tertiary);">Bulk keyword combinations per org. Save contractor URL candidates.</div>
+    </div>
+    <div class="pc">
+      <span class="tag ta">google_scraper.py</span>
+      <div style="margin-top:5px;font-size:11px;color:var(--color-text-tertiary);">For rate-limited bulk SERP scraping across 400+ orgs × keyword combos. Claude calls via Bash tool.</div>
+    </div>
+  </div>
+</div>
+
+<!-- Phase 3 -->
+<div class="card">
+  <div class="ph">
+    <div class="pn tp">3</div>
+    <div>
+      <div style="font-size:13px;font-weight:500;color:var(--color-text-primary);">Contractor intel crawl</div>
+      <div style="font-size:11px;color:var(--color-text-tertiary);">Crawl each contractor website → extract decision makers, contacts, services, projects</div>
+    </div>
+  </div>
+  <div class="pb">
+    <div class="pc">
+      <span class="tag tp">skill /bd-crawl-contractor</span>
+      <span class="tag tp">sub-agent: website-analyzer</span>
+      <span class="tag tp">Agent Teams (parallel per contractor)</span>
+      <div style="margin-top:5px;font-size:11px;color:var(--color-text-tertiary);">Each sub-agent gets one contractor. Isolated context. Outputs structured JSON.</div>
+    </div>
+    <div class="pc">
+      <span class="tag tt">Playwright MCP</span>
+      <span class="tag tt">Filesystem MCP</span>
+      <div style="margin-top:5px;font-size:11px;color:var(--color-text-tertiary);">JS-rendered pages, contact forms, team pages. Save raw + structured output.</div>
+    </div>
+    <div class="pc">
+      <span class="tag ta">crawler.py</span>
+      <div style="margin-top:5px;font-size:11px;color:var(--color-text-tertiary);">Deep multi-page crawl (Scrapy/BeautifulSoup). Claude invokes via Bash tool, parses the output JSON.</div>
+    </div>
+  </div>
+</div>
+
+<!-- Phase 4 -->
+<div class="card">
+  <div class="ph">
+    <div class="pn tt">4</div>
+    <div>
+      <div style="font-size:13px;font-weight:500;color:var(--color-text-primary);">CRM enrichment</div>
+      <div style="font-size:11px;color:var(--color-text-tertiary);">Push all discovered orgs, contractors, contacts and intel to hosted PostgreSQL</div>
+    </div>
+  </div>
+  <div class="pb">
+    <div class="pc">
+      <span class="tag tp">skill /bd-sync-crm</span>
+      <span class="tag tp">sub-agent: crm-writer</span>
+      <div style="margin-top:5px;font-size:11px;color:var(--color-text-tertiary);">Structured inserts with deduplication logic. Claude reads JSON from Phase 3 and writes to DB.</div>
+    </div>
+    <div class="pc">
+      <span class="tag tt">PostgreSQL MCP</span>
+      <div style="margin-top:5px;font-size:11px;color:var(--color-text-tertiary);">Direct connection to your hosted Postgres. Claude runs INSERT/UPSERT queries natively.</div>
+    </div>
+    <div class="pc">
+      <span class="tag ta">crm_schema.sql</span>
+      <div style="margin-top:5px;font-size:11px;color:var(--color-text-tertiary);">You design the schema once. Claude uses it to map crawled data to correct tables/columns.</div>
+    </div>
+  </div>
+</div>
+
+<!-- Phase 5 -->
+<div class="card">
+  <div class="ph">
+    <div class="pn tc">5</div>
+    <div>
+      <div style="font-size:13px;font-weight:500;color:var(--color-text-primary);">LinkedIn outreach</div>
+      <div style="font-size:11px;color:var(--color-text-tertiary);">Find decision makers on LinkedIn, send connection requests, mirror org/contractor search</div>
+    </div>
+  </div>
+  <div class="pb">
+    <div class="pc">
+      <span class="tag tp">skill /bd-linkedin-outreach</span>
+      <span class="tag tp">sub-agent: linkedin-prospector</span>
+      <div style="margin-top:5px;font-size:11px;color:var(--color-text-tertiary);">Claude enriches CRM contacts with LinkedIn URLs, generates personalised connection messages.</div>
+    </div>
+    <div class="pc">
+      <span class="tag tt">Brave Search MCP</span>
+      <span class="tag tg">LinkedIn MCP (not yet public)</span>
+      <div style="margin-top:5px;font-size:11px;color:var(--color-text-tertiary);">Search "site:linkedin.com {name} {company}" to find profiles. No official LI MCP yet.</div>
+    </div>
+    <div class="pc">
+      <span class="tag ta">linkedin_search.py</span>
+      <span class="tag ta">linkedin_connect.py</span>
+      <div style="margin-top:5px;font-size:11px;color:var(--color-text-tertiary);">Playwright-based automation for profile discovery and connection sends. Claude generates the message, script executes it.</div>
+    </div>
+  </div>
+</div>
+
+<!-- Phase 6 -->
+<div class="card future">
+  <div class="ph">
+    <div class="pn tg">6</div>
+    <div>
+      <div style="font-size:13px;font-weight:500;color:var(--color-text-primary);">Intel gathering flow <span style="font-size:11px;font-weight:400;color:var(--color-text-tertiary);">— design later</span></div>
+      <div style="font-size:11px;color:var(--color-text-tertiary);">Monitor orgs/contractors for triggers: new tenders, job postings, news, LinkedIn activity</div>
+    </div>
+  </div>
+  <div class="pb">
+    <div class="pc">
+      <span class="tag tp">Scheduled Tasks (cron)</span>
+      <span class="tag tp">skill /bd-intel-gather</span>
+      <div style="margin-top:5px;font-size:11px;color:var(--color-text-tertiary);">Run automatically on schedule. No manual trigger needed.</div>
+    </div>
+    <div class="pc">
+      <span class="tag tt">Brave Search MCP</span>
+      <span class="tag tt">PostgreSQL MCP</span>
+      <div style="margin-top:5px;font-size:11px;color:var(--color-text-tertiary);">Search for tender platforms (TenderNed), news, job posts. Update CRM with signals.</div>
+    </div>
+    <div class="pc">
+      <span class="tag ta">tendernet_scraper.py</span>
+      <span class="tag ta">rss_monitor.py</span>
+    </div>
+  </div>
+</div>
+
+<!-- Legend -->
+<div class="legend">
+  <span class="tag tp">Claude Code feature</span>
+  <span class="tag tt">MCP server</span>
+  <span class="tag ta">custom script (you build, Claude calls)</span>
+  <span class="tag tg">not available / optional</span>
+</div>
+
+</div>

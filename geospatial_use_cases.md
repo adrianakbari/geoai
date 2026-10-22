@@ -67,9 +67,13 @@ Inspection App / Schouw App
 3. Yearly inspection work
 3. Citizen's Participation
 
+### Amsterdam
 https://maps.amsterdam.nl/open_geodata/
-https://amstelveen.nl/ --> see Gemeente_Amstelveen\gemeente_amstelveen.md
+https://kaartviewer.amsterdam.nl/dashboards/?menuId=b8320cf2-57e7-44be-90eb-a9cde3574321
 
+### Amstelveen
+https://amstelveen.nl/ --> see Gemeente_Amstelveen\gemeente_amstelveen.md
+https://aa.kaartviewer.nl/dataportaal/index.html?website=DataportaalAA
 
 ## RWS
 - Maintenace
